@@ -1,0 +1,2404 @@
+{
+  "schema": 1,
+  "catalog_version": 19,
+  "issued_at": "2026-10-30",
+  "models": [
+    {
+      "id": "supertone--supertonic-3",
+      "display_name": "Supertonic 3",
+      "description": "Supertone's fast on-device voice model: ten built-in voices (five female, five male), English in Yapper, about five times faster than real time on a CPU.",
+      "family": "supertonic_onnx",
+      "family_version": 1,
+      "repo": "Supertone/supertonic-3",
+      "revision": "3cadd1ee6394adea1bd021217a0e650ede09a323",
+      "files": [
+        {
+          "path": "onnx/duration_predictor.onnx",
+          "sha256": "c3eb91414d5ff8a7a239b7fe9e34e7e2bf8a8140d8375ffb14718b1c639325db",
+          "size_bytes": 3700147
+        },
+        {
+          "path": "onnx/text_encoder.onnx",
+          "sha256": "c7befd5ea8c3119769e8a6c1486c4edc6a3bc8365c67621c881bbb774b9902ff",
+          "size_bytes": 36416150
+        },
+        {
+          "path": "onnx/tts.json",
+          "sha256": "42078d3aef1cd43ab43021f3c54f47d2d75ceb4e75f627f118890128b06a0d09",
+          "size_bytes": 8253
+        },
+        {
+          "path": "onnx/unicode_indexer.json",
+          "sha256": "9bf7346e43883a81f8645c81224f786d43c5b57f3641f6e7671a7d6c493cb24f",
+          "size_bytes": 277676
+        },
+        {
+          "path": "onnx/vector_estimator.onnx",
+          "sha256": "883ac868ea0275ef0e991524dc64f16b3c0376efd7c320af6b53f5b780d7c61c",
+          "size_bytes": 256534781
+        },
+        {
+          "path": "onnx/vocoder.onnx",
+          "sha256": "085de76dd8e8d5836d6ca66826601f615939218f90e519f70ee8a36ed2a4c4ba",
+          "size_bytes": 101424195
+        },
+        {
+          "path": "voice_styles/F1.json",
+          "sha256": "bbdec6ee00231c2c742ad05483df5334cab3b52fda3ba38e6a07059c4563dbc2",
+          "size_bytes": 292046
+        },
+        {
+          "path": "voice_styles/F2.json",
+          "sha256": "7c722c6a72707b1a77f035d67f0d1351ba187738e06f7683e8c72b1df3477fc6",
+          "size_bytes": 292423
+        },
+        {
+          "path": "voice_styles/F3.json",
+          "sha256": "12f6ef2573baa2defa1128069cb59f203e3ab67c92af77b42df8a0e3a2f7c6ab",
+          "size_bytes": 290794
+        },
+        {
+          "path": "voice_styles/F4.json",
+          "sha256": "c2fa764c1225a76dfc3e2c73e8aa4f70d9ee48793860eb34c295fff01c2e032b",
+          "size_bytes": 291808
+        },
+        {
+          "path": "voice_styles/F5.json",
+          "sha256": "45966e73316415626cf41a7d1c6f3b4c70dbc1ba2bee5c1978ef0ce33244fc8d",
+          "size_bytes": 291479
+        },
+        {
+          "path": "voice_styles/M1.json",
+          "sha256": "e35604687f5d23694b8e91593a93eec0e4eca6c0b02bb8ed69139ab2ea6b0a5b",
+          "size_bytes": 291748
+        },
+        {
+          "path": "voice_styles/M2.json",
+          "sha256": "b76cbf62bac707c710cf0ae5aba5e31eea1a6339a9734bfae33ab98499534a50",
+          "size_bytes": 292055
+        },
+        {
+          "path": "voice_styles/M3.json",
+          "sha256": "ea1ac35ccb91b0d7ecad533a2fbd0eec10c91513d8951e3b25fbba99954e159b",
+          "size_bytes": 290198
+        },
+        {
+          "path": "voice_styles/M4.json",
+          "sha256": "ca8eefad4fcd989c9379032ff3e50738adc547eeb5e221b82593a6d7b3bac303",
+          "size_bytes": 291522
+        },
+        {
+          "path": "voice_styles/M5.json",
+          "sha256": "dd22b92740314321f8ae11c5e87f8dd60d060f15dd3a632b5adf77f471f77af2",
+          "size_bytes": 291469
+        }
+      ],
+      "license": {
+        "id": "openrail",
+        "name": "BigScience Open RAIL-M",
+        "url": "https://huggingface.co/Supertone/supertonic-3/blob/3cadd1ee6394adea1bd021217a0e650ede09a323/LICENSE",
+        "summary": "Free to use, including commercially, under use restrictions: no impersonation, deception or other harmful use. Keep the license with the model.",
+        "commercial_use": "conditional"
+      },
+      "languages": [
+        "en"
+      ],
+      "voices": [
+        {
+          "description": null,
+          "gender": "female",
+          "key": "F1",
+          "name": "F1 (female)"
+        },
+        {
+          "description": null,
+          "gender": "female",
+          "key": "F2",
+          "name": "F2 (female)"
+        },
+        {
+          "description": null,
+          "gender": "female",
+          "key": "F3",
+          "name": "F3 (female)"
+        },
+        {
+          "description": null,
+          "gender": "female",
+          "key": "F4",
+          "name": "F4 (female)"
+        },
+        {
+          "description": null,
+          "gender": "female",
+          "key": "F5",
+          "name": "F5 (female)"
+        },
+        {
+          "description": null,
+          "gender": "male",
+          "key": "M1",
+          "name": "M1 (male)"
+        },
+        {
+          "description": null,
+          "gender": "male",
+          "key": "M2",
+          "name": "M2 (male)"
+        },
+        {
+          "description": null,
+          "gender": "male",
+          "key": "M3",
+          "name": "M3 (male)"
+        },
+        {
+          "description": null,
+          "gender": "male",
+          "key": "M4",
+          "name": "M4 (male)"
+        },
+        {
+          "description": null,
+          "gender": "male",
+          "key": "M5",
+          "name": "M5 (male)"
+        }
+      ],
+      "resources": {
+        "backends": [
+          "cpu"
+        ],
+        "download_bytes": 401276744,
+        "ram_gb": 2.0,
+        "speed_note": "R05 trial: a 5.4-minute three-chapter book rendered in 61 s on CPU (8 steps)."
+      },
+      "quality": {
+        "status": "pass",
+        "check": "tools/audio_eval/product_check.py (B07)",
+        "date": "2026-10-29",
+        "report": "R05 trial, voice M1, 3-chapter book, WAV: REVIEW with no FAIL (names and one-transcript readings only). docs/research/implementation-plan/r05-report.md"
+      },
+      "attribution": [
+        "Supertonic 3 by Supertone Inc., https://huggingface.co/Supertone/supertonic-3 (commit 3cadd1ee6394), BigScience Open RAIL-M. Not modified. Inference code in Yapper follows Supertone's MIT-licensed example (github.com/supertone-inc/supertonic)."
+      ],
+      "notices": [
+        "The Open RAIL-M license forbids using the model or its output to impersonate people without consent, to deceive, to harass, or for other uses listed in its Attachment A. Full text: https://huggingface.co/Supertone/supertonic-3/blob/3cadd1ee6394adea1bd021217a0e650ede09a323/LICENSE"
+      ],
+      "settings": {}
+    },
+    {
+      "display_name": "Qwen3-TTS 0.6B",
+      "description": "Compact multilingual model. Follows style directions on the graphics card or, slowly, on the processor.",
+      "family": "qwen",
+      "family_version": 1,
+      "repo": "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+      "revision": "85e237c12c027371202489a0ec509ded67b5e4b5",
+      "license": {
+        "id": "Apache-2.0",
+        "name": "Apache License 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0",
+        "summary": "Permissive; keep the license and notices.",
+        "commercial_use": "yes"
+      },
+      "languages": [
+        "en",
+        "zh",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "ru",
+        "pt",
+        "es",
+        "it"
+      ],
+      "settings": {
+        "variant": "0.6B"
+      },
+      "component": false,
+      "voices": [
+        {
+          "key": "qwen_ryan",
+          "id": "qwen_ryan",
+          "name": "Ryan",
+          "meta": {
+            "displayName": "Ryan (Dynamic Male)",
+            "language": "en",
+            "languageName": "English",
+            "age": "young",
+            "category": "conversational",
+            "tags": [
+              "multilingual",
+              "dynamic"
+            ],
+            "quality": "high",
+            "sample_text": "Hello, I am Ryan. I can speak English with natural intonation and energy.",
+            "speaker_mapping": "ryan"
+          },
+          "gender": "male",
+          "description": "Dynamic and expressive English voice."
+        },
+        {
+          "key": "qwen_aiden",
+          "id": "qwen_aiden",
+          "name": "Aiden",
+          "meta": {
+            "displayName": "Aiden (Sunny Male)",
+            "language": "en",
+            "languageName": "English",
+            "age": "young",
+            "category": "conversational",
+            "tags": [
+              "multilingual",
+              "friendly"
+            ],
+            "quality": "high",
+            "sample_text": "Hi! I'm Aiden. I bring a friendly and approachable tone to everything I say.",
+            "speaker_mapping": "aiden"
+          },
+          "gender": "male",
+          "description": "Sunny and friendly American English voice."
+        },
+        {
+          "key": "qwen_vivian",
+          "id": "qwen_vivian",
+          "name": "Vivian",
+          "meta": {
+            "displayName": "Vivian (Bright Female)",
+            "language": "zh",
+            "languageName": "Chinese",
+            "age": "young",
+            "category": "conversational",
+            "tags": [
+              "multilingual",
+              "bright"
+            ],
+            "quality": "high",
+            "sample_text": "你好，我是Vivian。我的声音清脆明亮，很高兴能为你服务。",
+            "speaker_mapping": "vivian"
+          },
+          "gender": "female",
+          "description": "Bright and clear young female voice."
+        },
+        {
+          "key": "qwen_serena",
+          "id": "qwen_serena",
+          "name": "Serena",
+          "meta": {
+            "displayName": "Serena (Warm Female)",
+            "language": "zh",
+            "languageName": "Chinese",
+            "age": "young",
+            "category": "narration",
+            "tags": [
+              "multilingual",
+              "warm"
+            ],
+            "quality": "high",
+            "sample_text": "你好，我是Serena。希望我的声音能带给你一丝温暖。",
+            "speaker_mapping": "serena"
+          },
+          "gender": "female",
+          "description": "Warm and gentle young female voice, perfect for storytelling."
+        },
+        {
+          "key": "qwen_uncle_fu",
+          "id": "qwen_uncle_fu",
+          "name": "Uncle Fu",
+          "meta": {
+            "displayName": "Uncle Fu (Seasoned Male)",
+            "language": "zh",
+            "languageName": "Chinese",
+            "age": "senior",
+            "category": "news",
+            "tags": [
+              "multilingual",
+              "formal"
+            ],
+            "quality": "high",
+            "sample_text": "大家好，我是傅叔。我用沉稳的声音为你播报内容。",
+            "speaker_mapping": "uncle_fu"
+          },
+          "gender": "male",
+          "description": "Seasoned and authoritative male voice."
+        },
+        {
+          "key": "qwen_dylan",
+          "id": "qwen_dylan",
+          "name": "Dylan",
+          "meta": {
+            "displayName": "Dylan (Youthful Male)",
+            "language": "zh",
+            "languageName": "Chinese",
+            "age": "young",
+            "category": "conversational",
+            "tags": [
+              "multilingual",
+              "energetic"
+            ],
+            "quality": "high",
+            "sample_text": "嘿！我是Dylan，地道的北京小伙。听听我的声音怎么样？",
+            "speaker_mapping": "dylan"
+          },
+          "gender": "male",
+          "description": "Youthful and energetic Beijing male voice."
+        },
+        {
+          "key": "qwen_eric",
+          "id": "qwen_eric",
+          "name": "Eric",
+          "meta": {
+            "displayName": "Eric (Lively Male)",
+            "language": "zh",
+            "languageName": "Chinese",
+            "age": "young",
+            "category": "conversational",
+            "tags": [
+              "multilingual",
+              "lively"
+            ],
+            "quality": "high",
+            "sample_text": "哈喽，我是Eric。我的声音充满活力，希望能让你快乐。",
+            "speaker_mapping": "eric"
+          },
+          "gender": "male",
+          "description": "Lively and expressive Chengdu male voice."
+        },
+        {
+          "key": "qwen_ono_anna",
+          "id": "qwen_ono_anna",
+          "name": "Ono Anna",
+          "meta": {
+            "displayName": "Ono Anna (Playful Female)",
+            "language": "ja",
+            "languageName": "Japanese",
+            "age": "young",
+            "category": "character",
+            "tags": [
+              "multilingual",
+              "playful"
+            ],
+            "quality": "high",
+            "sample_text": "こんにちは、小野アンナです！楽しくお話ししましょう。",
+            "speaker_mapping": "ono_anna"
+          },
+          "gender": "female",
+          "description": "Playful and cute Japanese female voice."
+        },
+        {
+          "key": "qwen_sohee",
+          "id": "qwen_sohee",
+          "name": "Sohee",
+          "meta": {
+            "displayName": "Sohee (Warm Female)",
+            "language": "ko",
+            "languageName": "Korean",
+            "age": "young",
+            "category": "conversational",
+            "tags": [
+              "multilingual",
+              "elegant"
+            ],
+            "quality": "high",
+            "sample_text": "안녕하세요, 소희입니다. 따뜻하고 우아한 목소리로 전달해 드릴게요.",
+            "speaker_mapping": "sohee"
+          },
+          "gender": "female",
+          "description": "Warm and elegant Korean female voice."
+        },
+        {
+          "key": "qwen_de",
+          "id": "qwen_de",
+          "name": "German",
+          "meta": {
+            "displayName": "Qwen German",
+            "language": "de",
+            "languageName": "German",
+            "age": "middle",
+            "category": "conversational",
+            "tags": [
+              "multilingual",
+              "ai"
+            ],
+            "quality": "high",
+            "sample_text": "Hallo, ich bin Qwens deutsche Stimme.",
+            "speaker_mapping": "dylan"
+          },
+          "gender": "neutral",
+          "description": "German voice powered by Qwen3-TTS."
+        },
+        {
+          "key": "qwen_fr",
+          "id": "qwen_fr",
+          "name": "French",
+          "meta": {
+            "displayName": "Qwen French",
+            "language": "fr",
+            "languageName": "French",
+            "age": "middle",
+            "category": "conversational",
+            "tags": [
+              "multilingual",
+              "ai"
+            ],
+            "quality": "high",
+            "sample_text": "Bonjour, je suis la voix française de Qwen.",
+            "speaker_mapping": "vivian"
+          },
+          "gender": "neutral",
+          "description": "French voice powered by Qwen3-TTS."
+        },
+        {
+          "key": "qwen_ru",
+          "id": "qwen_ru",
+          "name": "Russian",
+          "meta": {
+            "displayName": "Qwen Russian",
+            "language": "ru",
+            "languageName": "Russian",
+            "age": "middle",
+            "category": "conversational",
+            "tags": [
+              "multilingual",
+              "ai"
+            ],
+            "quality": "high",
+            "sample_text": "Привет, я русский голос Qwen.",
+            "speaker_mapping": "eric"
+          },
+          "gender": "neutral",
+          "description": "Russian voice powered by Qwen3-TTS."
+        },
+        {
+          "key": "qwen_pt",
+          "id": "qwen_pt",
+          "name": "Portuguese",
+          "meta": {
+            "displayName": "Qwen Portuguese",
+            "language": "pt",
+            "languageName": "Portuguese",
+            "age": "middle",
+            "category": "conversational",
+            "tags": [
+              "multilingual",
+              "ai"
+            ],
+            "quality": "high",
+            "sample_text": "Olá, sou a voz portuguesa do Qwen.",
+            "speaker_mapping": "aiden"
+          },
+          "gender": "neutral",
+          "description": "Portuguese voice powered by Qwen3-TTS."
+        },
+        {
+          "key": "qwen_es",
+          "id": "qwen_es",
+          "name": "Spanish",
+          "meta": {
+            "displayName": "Qwen Spanish",
+            "language": "es",
+            "languageName": "Spanish",
+            "age": "middle",
+            "category": "conversational",
+            "tags": [
+              "multilingual",
+              "ai"
+            ],
+            "quality": "high",
+            "sample_text": "Hola, soy la voz española de Qwen.",
+            "speaker_mapping": "uncle_fu"
+          },
+          "gender": "neutral",
+          "description": "Spanish voice powered by Qwen3-TTS."
+        },
+        {
+          "key": "qwen_it",
+          "id": "qwen_it",
+          "name": "Italian",
+          "meta": {
+            "displayName": "Qwen Italian",
+            "language": "it",
+            "languageName": "Italian",
+            "age": "middle",
+            "category": "conversational",
+            "tags": [
+              "multilingual",
+              "ai"
+            ],
+            "quality": "high",
+            "sample_text": "Ciao, sono la voz italiana di Qwen.",
+            "speaker_mapping": "ryan"
+          },
+          "gender": "neutral",
+          "description": "Italian voice powered by Qwen3-TTS."
+        }
+      ],
+      "quality": {
+        "status": "fail",
+        "check": "product-check (B07, three-chapter book, GPU)",
+        "date": "2026-10-30",
+        "report": "docs/research/implementation-plan/r05b-report.md"
+      },
+      "attribution": [
+        "Qwen3-TTS by the Qwen team, Alibaba Cloud (https://huggingface.co/Qwen), Apache-2.0."
+      ],
+      "id": "qwen--qwen3-tts-12hz-0.6b-customvoice",
+      "files": [
+        {
+          "path": "config.json",
+          "size_bytes": 4908,
+          "sha256": "81aca2b6fac304944d8acf345272d8a9a727d5fc2e2e66b222ab4729340c7455"
+        },
+        {
+          "path": "generation_config.json",
+          "size_bytes": 245,
+          "sha256": "f1b90b4513f3b34c62851049e2492d7b4c5940daf1276f89c82b8ef04127f3aa"
+        },
+        {
+          "path": "merges.txt",
+          "size_bytes": 1671839,
+          "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+        },
+        {
+          "path": "model.safetensors",
+          "size_bytes": 1811626576,
+          "sha256": "bc3c7e785eb961179c25450d1acff03f839e0002f2f3a5aeb67b5735c0fa2adb"
+        },
+        {
+          "path": "preprocessor_config.json",
+          "size_bytes": 127,
+          "sha256": "efdde1022ea9d76928bf7a9cd53139138f5ba2e466e837f08f6105ab1af1c119"
+        },
+        {
+          "path": "speech_tokenizer/config.json",
+          "size_bytes": 2336,
+          "sha256": "ee65bb901c876664ab8707c487157aa1a6ee57c65969b28fb5ec9dc211e68167"
+        },
+        {
+          "path": "speech_tokenizer/configuration.json",
+          "size_bytes": 76,
+          "sha256": "6bc26d64eb5024b4d1dab5a52371958b429256d6c9d59787f1f5294a54e0cebd"
+        },
+        {
+          "path": "speech_tokenizer/model.safetensors",
+          "size_bytes": 682293092,
+          "sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258"
+        },
+        {
+          "path": "speech_tokenizer/preprocessor_config.json",
+          "size_bytes": 234,
+          "sha256": "fcb3805e597e786d4067706e602f6688524640f8d3396790e2e09b5942fcbdfb"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size_bytes": 7344,
+          "sha256": "dc3c31c3bdaedd5016382bb3cbe07323026775ad51f5a4fb564505992ae4a670"
+        },
+        {
+          "path": "vocab.json",
+          "size_bytes": 2776833,
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+        }
+      ],
+      "resources": {
+        "download_bytes": 2498383610,
+        "ram_gb": 8,
+        "backends": [
+          "cpu",
+          "cuda"
+        ],
+        "speed_note": ""
+      }
+    },
+    {
+      "display_name": "Qwen3-TTS 1.7B",
+      "description": "Large multilingual model: the most expressive we tested. Needs a graphics card.",
+      "family": "qwen",
+      "family_version": 1,
+      "repo": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+      "revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+      "license": {
+        "id": "Apache-2.0",
+        "name": "Apache License 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0",
+        "summary": "Permissive; keep the license and notices.",
+        "commercial_use": "yes"
+      },
+      "languages": [
+        "en",
+        "zh",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "ru",
+        "pt",
+        "es",
+        "it"
+      ],
+      "settings": {
+        "variant": "1.7B"
+      },
+      "component": false,
+      "voices": [
+        {
+          "key": "qwen_ryan",
+          "id": "qwen_ryan",
+          "name": "Ryan",
+          "meta": {
+            "displayName": "Ryan (Dynamic Male)",
+            "language": "en",
+            "languageName": "English",
+            "age": "young",
+            "category": "conversational",
+            "tags": [
+              "multilingual",
+              "dynamic"
+            ],
+            "quality": "high",
+            "sample_text": "Hello, I am Ryan. I can speak English with natural intonation and energy.",
+            "speaker_mapping": "ryan"
+          },
+          "gender": "male",
+          "description": "Dynamic and expressive English voice."
+        },
+        {
+          "key": "qwen_aiden",
+          "id": "qwen_aiden",
+          "name": "Aiden",
+          "meta": {
+            "displayName": "Aiden (Sunny Male)",
+            "language": "en",
+            "languageName": "English",
+            "age": "young",
+            "category": "conversational",
+            "tags": [
+              "multilingual",
+              "friendly"
+            ],
+            "quality": "high",
+            "sample_text": "Hi! I'm Aiden. I bring a friendly and approachable tone to everything I say.",
+            "speaker_mapping": "aiden"
+          },
+          "gender": "male",
+          "description": "Sunny and friendly American English voice."
+        },
+        {
+          "key": "qwen_vivian",
+          "id": "qwen_vivian",
+          "name": "Vivian",
+          "meta": {
+            "displayName": "Vivian (Bright Female)",
+            "language": "zh",
+            "languageName": "Chinese",
+            "age": "young",
+            "category": "conversational",
+            "tags": [
+              "multilingual",
+              "bright"
+            ],
+            "quality": "high",
+            "sample_text": "你好，我是Vivian。我的声音清脆明亮，很高兴能为你服务。",
+            "speaker_mapping": "vivian"
+          },
+          "gender": "female",
+          "description": "Bright and clear young female voice."
+        },
+        {
+          "key": "qwen_serena",
+          "id": "qwen_serena",
+          "name": "Serena",
+          "meta": {
+            "displayName": "Serena (Warm Female)",
+            "language": "zh",
+            "languageName": "Chinese",
+            "age": "young",
+            "category": "narration",
+            "tags": [
+              "multilingual",
+              "warm"
+            ],
+            "quality": "high",
+            "sample_text": "你好，我是Serena。希望我的声音能带给你一丝温暖。",
+            "speaker_mapping": "serena"
+          },
+          "gender": "female",
+          "description": "Warm and gentle young female voice, perfect for storytelling."
+        },
+        {
+          "key": "qwen_uncle_fu",
+          "id": "qwen_uncle_fu",
+          "name": "Uncle Fu",
+          "meta": {
+            "displayName": "Uncle Fu (Seasoned Male)",
+            "language": "zh",
+            "languageName": "Chinese",
+            "age": "senior",
+            "category": "news",
+            "tags": [
+              "multilingual",
+              "formal"
+            ],
+            "quality": "high",
+            "sample_text": "大家好，我是傅叔。我用沉稳的声音为你播报内容。",
+            "speaker_mapping": "uncle_fu"
+          },
+          "gender": "male",
+          "description": "Seasoned and authoritative male voice."
+        },
+        {
+          "key": "qwen_dylan",
+          "id": "qwen_dylan",
+          "name": "Dylan",
+          "meta": {
+            "displayName": "Dylan (Youthful Male)",
+            "language": "zh",
+            "languageName": "Chinese",
+            "age": "young",
+            "category": "conversational",
+            "tags": [
+              "multilingual",
+              "energetic"
+            ],
+            "quality": "high",
+            "sample_text": "嘿！我是Dylan，地道的北京小伙。听听我的声音怎么样？",
+            "speaker_mapping": "dylan"
+          },
+          "gender": "male",
+          "description": "Youthful and energetic Beijing male voice."
+        },
+        {
+          "key": "qwen_eric",
+          "id": "qwen_eric",
+          "name": "Eric",
+          "meta": {
+            "displayName": "Eric (Lively Male)",
+            "language": "zh",
+            "languageName": "Chinese",
+            "age": "young",
+            "category": "conversational",
+            "tags": [
+              "multilingual",
+              "lively"
+            ],
+            "quality": "high",
+            "sample_text": "哈喽，我是Eric。我的声音充满活力，希望能让你快乐。",
+            "speaker_mapping": "eric"
+          },
+          "gender": "male",
+          "description": "Lively and expressive Chengdu male voice."
+        },
+        {
+          "key": "qwen_ono_anna",
+          "id": "qwen_ono_anna",
+          "name": "Ono Anna",
+          "meta": {
+            "displayName": "Ono Anna (Playful Female)",
+            "language": "ja",
+            "languageName": "Japanese",
+            "age": "young",
+            "category": "character",
+            "tags": [
+              "multilingual",
+              "playful"
+            ],
+            "quality": "high",
+            "sample_text": "こんにちは、小野アンナです！楽しくお話ししましょう。",
+            "speaker_mapping": "ono_anna"
+          },
+          "gender": "female",
+          "description": "Playful and cute Japanese female voice."
+        },
+        {
+          "key": "qwen_sohee",
+          "id": "qwen_sohee",
+          "name": "Sohee",
+          "meta": {
+            "displayName": "Sohee (Warm Female)",
+            "language": "ko",
+            "languageName": "Korean",
+            "age": "young",
+            "category": "conversational",
+            "tags": [
+              "multilingual",
+              "elegant"
+            ],
+            "quality": "high",
+            "sample_text": "안녕하세요, 소희입니다. 따뜻하고 우아한 목소리로 전달해 드릴게요.",
+            "speaker_mapping": "sohee"
+          },
+          "gender": "female",
+          "description": "Warm and elegant Korean female voice."
+        },
+        {
+          "key": "qwen_de",
+          "id": "qwen_de",
+          "name": "German",
+          "meta": {
+            "displayName": "Qwen German",
+            "language": "de",
+            "languageName": "German",
+            "age": "middle",
+            "category": "conversational",
+            "tags": [
+              "multilingual",
+              "ai"
+            ],
+            "quality": "high",
+            "sample_text": "Hallo, ich bin Qwens deutsche Stimme.",
+            "speaker_mapping": "dylan"
+          },
+          "gender": "neutral",
+          "description": "German voice powered by Qwen3-TTS."
+        },
+        {
+          "key": "qwen_fr",
+          "id": "qwen_fr",
+          "name": "French",
+          "meta": {
+            "displayName": "Qwen French",
+            "language": "fr",
+            "languageName": "French",
+            "age": "middle",
+            "category": "conversational",
+            "tags": [
+              "multilingual",
+              "ai"
+            ],
+            "quality": "high",
+            "sample_text": "Bonjour, je suis la voix française de Qwen.",
+            "speaker_mapping": "vivian"
+          },
+          "gender": "neutral",
+          "description": "French voice powered by Qwen3-TTS."
+        },
+        {
+          "key": "qwen_ru",
+          "id": "qwen_ru",
+          "name": "Russian",
+          "meta": {
+            "displayName": "Qwen Russian",
+            "language": "ru",
+            "languageName": "Russian",
+            "age": "middle",
+            "category": "conversational",
+            "tags": [
+              "multilingual",
+              "ai"
+            ],
+            "quality": "high",
+            "sample_text": "Привет, я русский голос Qwen.",
+            "speaker_mapping": "eric"
+          },
+          "gender": "neutral",
+          "description": "Russian voice powered by Qwen3-TTS."
+        },
+        {
+          "key": "qwen_pt",
+          "id": "qwen_pt",
+          "name": "Portuguese",
+          "meta": {
+            "displayName": "Qwen Portuguese",
+            "language": "pt",
+            "languageName": "Portuguese",
+            "age": "middle",
+            "category": "conversational",
+            "tags": [
+              "multilingual",
+              "ai"
+            ],
+            "quality": "high",
+            "sample_text": "Olá, sou a voz portuguesa do Qwen.",
+            "speaker_mapping": "aiden"
+          },
+          "gender": "neutral",
+          "description": "Portuguese voice powered by Qwen3-TTS."
+        },
+        {
+          "key": "qwen_es",
+          "id": "qwen_es",
+          "name": "Spanish",
+          "meta": {
+            "displayName": "Qwen Spanish",
+            "language": "es",
+            "languageName": "Spanish",
+            "age": "middle",
+            "category": "conversational",
+            "tags": [
+              "multilingual",
+              "ai"
+            ],
+            "quality": "high",
+            "sample_text": "Hola, soy la voz española de Qwen.",
+            "speaker_mapping": "uncle_fu"
+          },
+          "gender": "neutral",
+          "description": "Spanish voice powered by Qwen3-TTS."
+        },
+        {
+          "key": "qwen_it",
+          "id": "qwen_it",
+          "name": "Italian",
+          "meta": {
+            "displayName": "Qwen Italian",
+            "language": "it",
+            "languageName": "Italian",
+            "age": "middle",
+            "category": "conversational",
+            "tags": [
+              "multilingual",
+              "ai"
+            ],
+            "quality": "high",
+            "sample_text": "Ciao, sono la voz italiana di Qwen.",
+            "speaker_mapping": "ryan"
+          },
+          "gender": "neutral",
+          "description": "Italian voice powered by Qwen3-TTS."
+        }
+      ],
+      "quality": {
+        "status": "pass",
+        "check": "product-check (B07, three-chapter book, GPU), REVIEW for listening items only",
+        "date": "2026-10-30",
+        "report": "docs/research/implementation-plan/r05b-report.md"
+      },
+      "attribution": [
+        "Qwen3-TTS by the Qwen team, Alibaba Cloud (https://huggingface.co/Qwen), Apache-2.0."
+      ],
+      "id": "qwen--qwen3-tts-12hz-1.7b-customvoice",
+      "files": [
+        {
+          "path": "config.json",
+          "size_bytes": 4908,
+          "sha256": "17a07f527a1c25ea30b4e023a184482a23d3e279d697b1dc81b1bde498d29cf9"
+        },
+        {
+          "path": "generation_config.json",
+          "size_bytes": 245,
+          "sha256": "f1b90b4513f3b34c62851049e2492d7b4c5940daf1276f89c82b8ef04127f3aa"
+        },
+        {
+          "path": "merges.txt",
+          "size_bytes": 1671839,
+          "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+        },
+        {
+          "path": "model.safetensors",
+          "size_bytes": 3833402552,
+          "sha256": "38b1d5971bdbd982b561cccec982669a53b0537c3cf5e9bd4778ed07bb2f5137"
+        },
+        {
+          "path": "preprocessor_config.json",
+          "size_bytes": 127,
+          "sha256": "efdde1022ea9d76928bf7a9cd53139138f5ba2e466e837f08f6105ab1af1c119"
+        },
+        {
+          "path": "speech_tokenizer/config.json",
+          "size_bytes": 2336,
+          "sha256": "ee65bb901c876664ab8707c487157aa1a6ee57c65969b28fb5ec9dc211e68167"
+        },
+        {
+          "path": "speech_tokenizer/configuration.json",
+          "size_bytes": 76,
+          "sha256": "6bc26d64eb5024b4d1dab5a52371958b429256d6c9d59787f1f5294a54e0cebd"
+        },
+        {
+          "path": "speech_tokenizer/model.safetensors",
+          "size_bytes": 682293092,
+          "sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258"
+        },
+        {
+          "path": "speech_tokenizer/preprocessor_config.json",
+          "size_bytes": 234,
+          "sha256": "fcb3805e597e786d4067706e602f6688524640f8d3396790e2e09b5942fcbdfb"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size_bytes": 7344,
+          "sha256": "dc3c31c3bdaedd5016382bb3cbe07323026775ad51f5a4fb564505992ae4a670"
+        },
+        {
+          "path": "vocab.json",
+          "size_bytes": 2776833,
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+        }
+      ],
+      "resources": {
+        "download_bytes": 4520159586,
+        "ram_gb": 16,
+        "backends": [
+          "cuda"
+        ],
+        "speed_note": ""
+      }
+    },
+    {
+      "display_name": "Qwen3-TTS Base 1.7B",
+      "description": "The part Qwen3-TTS needs to clone a voice.",
+      "family": "qwen",
+      "family_version": 1,
+      "repo": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "license": {
+        "id": "Apache-2.0",
+        "name": "Apache License 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0",
+        "summary": "Permissive; keep the license and notices.",
+        "commercial_use": "yes"
+      },
+      "languages": [
+        "en",
+        "zh",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "ru",
+        "pt",
+        "es",
+        "it"
+      ],
+      "settings": {
+        "variant": "base"
+      },
+      "component": true,
+      "voices": [],
+      "quality": {
+        "status": "pass",
+        "check": "product-check (B07, three-chapter book and two-host podcast of created voices, compared with their clips), REVIEW for listening items only",
+        "date": "2026-10-30",
+        "report": "docs/research/implementation-plan/b06c-report.md"
+      },
+      "attribution": [
+        "Qwen3-TTS by the Qwen team, Alibaba Cloud (https://huggingface.co/Qwen), Apache-2.0."
+      ],
+      "id": "qwen--qwen3-tts-12hz-1.7b-base",
+      "files": [
+        {
+          "path": "config.json",
+          "size_bytes": 4494,
+          "sha256": "b4f01752d15a488abde3e1ab44723ae4f4b9e68a4037257b098b3737893cc1f9"
+        },
+        {
+          "path": "generation_config.json",
+          "size_bytes": 245,
+          "sha256": "f1b90b4513f3b34c62851049e2492d7b4c5940daf1276f89c82b8ef04127f3aa"
+        },
+        {
+          "path": "merges.txt",
+          "size_bytes": 1671839,
+          "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+        },
+        {
+          "path": "model.safetensors",
+          "size_bytes": 3857413744,
+          "sha256": "38fc7fc51c5e776e840414b6fd443962e9411b9654888fd7913e4da643cb857c"
+        },
+        {
+          "path": "preprocessor_config.json",
+          "size_bytes": 127,
+          "sha256": "efdde1022ea9d76928bf7a9cd53139138f5ba2e466e837f08f6105ab1af1c119"
+        },
+        {
+          "path": "speech_tokenizer/config.json",
+          "size_bytes": 2336,
+          "sha256": "ee65bb901c876664ab8707c487157aa1a6ee57c65969b28fb5ec9dc211e68167"
+        },
+        {
+          "path": "speech_tokenizer/configuration.json",
+          "size_bytes": 76,
+          "sha256": "6bc26d64eb5024b4d1dab5a52371958b429256d6c9d59787f1f5294a54e0cebd"
+        },
+        {
+          "path": "speech_tokenizer/model.safetensors",
+          "size_bytes": 682293092,
+          "sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258"
+        },
+        {
+          "path": "speech_tokenizer/preprocessor_config.json",
+          "size_bytes": 234,
+          "sha256": "fcb3805e597e786d4067706e602f6688524640f8d3396790e2e09b5942fcbdfb"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size_bytes": 7344,
+          "sha256": "dc3c31c3bdaedd5016382bb3cbe07323026775ad51f5a4fb564505992ae4a670"
+        },
+        {
+          "path": "vocab.json",
+          "size_bytes": 2776833,
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+        }
+      ],
+      "resources": {
+        "download_bytes": 4544170364,
+        "ram_gb": 16,
+        "backends": [
+          "cpu",
+          "cuda"
+        ],
+        "speed_note": ""
+      }
+    },
+    {
+      "display_name": "Qwen3-TTS Voice Design 1.7B",
+      "description": "The part Qwen3-TTS needs to design a voice from a description.",
+      "family": "qwen",
+      "family_version": 1,
+      "repo": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+      "license": {
+        "id": "Apache-2.0",
+        "name": "Apache License 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0",
+        "summary": "Permissive; keep the license and notices.",
+        "commercial_use": "yes"
+      },
+      "languages": [
+        "en",
+        "zh",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "ru",
+        "pt",
+        "es",
+        "it"
+      ],
+      "settings": {
+        "variant": "voice-design"
+      },
+      "component": true,
+      "voices": [],
+      "quality": {
+        "status": "not_run",
+        "check": "none: clones and designed voices have no book trial",
+        "date": "2026-10-30",
+        "report": "docs/research/implementation-plan/r05b-report.md"
+      },
+      "attribution": [
+        "Qwen3-TTS by the Qwen team, Alibaba Cloud (https://huggingface.co/Qwen), Apache-2.0."
+      ],
+      "id": "qwen--qwen3-tts-12hz-1.7b-voicedesign",
+      "files": [
+        {
+          "path": "config.json",
+          "size_bytes": 4421,
+          "sha256": "aecd2cc4c1fe9edef1cb7ca7c401685a43879ad43f3f9e883f1c6760b61731e0"
+        },
+        {
+          "path": "generation_config.json",
+          "size_bytes": 245,
+          "sha256": "f1b90b4513f3b34c62851049e2492d7b4c5940daf1276f89c82b8ef04127f3aa"
+        },
+        {
+          "path": "merges.txt",
+          "size_bytes": 1671839,
+          "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+        },
+        {
+          "path": "model.safetensors",
+          "size_bytes": 3833402552,
+          "sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522"
+        },
+        {
+          "path": "preprocessor_config.json",
+          "size_bytes": 127,
+          "sha256": "efdde1022ea9d76928bf7a9cd53139138f5ba2e466e837f08f6105ab1af1c119"
+        },
+        {
+          "path": "speech_tokenizer/config.json",
+          "size_bytes": 2336,
+          "sha256": "ee65bb901c876664ab8707c487157aa1a6ee57c65969b28fb5ec9dc211e68167"
+        },
+        {
+          "path": "speech_tokenizer/configuration.json",
+          "size_bytes": 76,
+          "sha256": "6bc26d64eb5024b4d1dab5a52371958b429256d6c9d59787f1f5294a54e0cebd"
+        },
+        {
+          "path": "speech_tokenizer/model.safetensors",
+          "size_bytes": 682293092,
+          "sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258"
+        },
+        {
+          "path": "speech_tokenizer/preprocessor_config.json",
+          "size_bytes": 234,
+          "sha256": "fcb3805e597e786d4067706e602f6688524640f8d3396790e2e09b5942fcbdfb"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size_bytes": 7344,
+          "sha256": "dc3c31c3bdaedd5016382bb3cbe07323026775ad51f5a4fb564505992ae4a670"
+        },
+        {
+          "path": "vocab.json",
+          "size_bytes": 2776833,
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+        }
+      ],
+      "resources": {
+        "download_bytes": 4520159099,
+        "ram_gb": 16,
+        "backends": [
+          "cpu",
+          "cuda"
+        ],
+        "speed_note": ""
+      }
+    },
+    {
+      "display_name": "Pocket TTS",
+      "description": "Kyutai Pocket TTS (English, without voice cloning) with six built-in voices.",
+      "family": "pocket",
+      "family_version": 1,
+      "repo": "kyutai/pocket-tts-without-voice-cloning",
+      "revision": "e7205b6ee50e654a5ea19f0e9df2b0813b05e921",
+      "license": {
+        "id": "CC-BY-4.0",
+        "name": "Creative Commons Attribution 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "summary": "Keep the attribution. Kyutai's terms prohibit impersonating a person without consent.",
+        "commercial_use": "conditional"
+      },
+      "languages": [
+        "en"
+      ],
+      "attribution": [
+        "pocket-tts 3.3.0 by Kyutai (https://github.com/kyutai-labs/pocket-tts), MIT License.",
+        "Pocket TTS model weights, tokenizer and voice embeddings by Kyutai (Manu Orsini, Simon Rouard, Gabriel De Marmiesse, Václav Volhejn, Neil Zeghidour, Alexandre Défossez), https://huggingface.co/kyutai/pocket-tts-without-voice-cloning, licensed under CC BY 4.0. Not modified.",
+        "Voice alba: recording by Alba MacKenna (kyutai/tts-voices, alba-mackenna), CC BY 4.0.",
+        "Voices azelma, eponine and fantine: derived from the CSTR VCTK Corpus (University of Edinburgh; kyutai/tts-voices, vctk), CC BY 4.0.",
+        "Voices marius and javert: Unmute voice donations (kyutai/tts-voices, voice-donations), CC0 1.0."
+      ],
+      "notices": [
+        "Kyutai's terms for this model prohibit: impersonating or cloning a person's voice without their explicit, lawful consent; misinformation, disinformation and deception, including fake news, fraudulent calls, or presenting generated audio as a genuine recording of real people or events; and generating unlawful, harmful, libelous, abusive, harassing, discriminatory, hateful or privacy-invasive content. Use must comply with applicable law. Kyutai disclaims liability for non-compliant use. Full terms: https://huggingface.co/kyutai/pocket-tts-without-voice-cloning"
+      ],
+      "voices": [
+        {
+          "key": "pocket_alba",
+          "id": "pocket_alba",
+          "name": "Alba",
+          "meta": {
+            "displayName": "Alba (Warm Female)",
+            "language": "en",
+            "languageName": "English",
+            "age": "young",
+            "category": "narration",
+            "tags": [
+              "pocket",
+              "warm",
+              "female",
+              "model:pocket-tts"
+            ],
+            "quality": "high",
+            "sample_text": "Hello, I am Alba. My voice carries warmth and comfort for your listening pleasure.",
+            "speaker_mapping": "alba"
+          },
+          "gender": "female",
+          "description": "Warm and gentle female voice with a soothing quality."
+        },
+        {
+          "key": "pocket_marius",
+          "id": "pocket_marius",
+          "name": "Marius",
+          "meta": {
+            "displayName": "Marius (Deep Male)",
+            "language": "en",
+            "languageName": "English",
+            "age": "young",
+            "category": "narration",
+            "tags": [
+              "pocket",
+              "deep",
+              "male",
+              "model:pocket-tts"
+            ],
+            "quality": "high",
+            "sample_text": "Hello, I am Marius. My voice carries depth and authority.",
+            "speaker_mapping": "marius"
+          },
+          "gender": "male",
+          "description": "Deep and resonant male voice with commanding presence."
+        },
+        {
+          "key": "pocket_javert",
+          "id": "pocket_javert",
+          "name": "Javert",
+          "meta": {
+            "displayName": "Javert (Gruff Male)",
+            "language": "en",
+            "languageName": "English",
+            "age": "middle",
+            "category": "narration",
+            "tags": [
+              "pocket",
+              "gruff",
+              "male",
+              "model:pocket-tts"
+            ],
+            "quality": "high",
+            "sample_text": "Hello, I am Javert. My voice has a rough edge and intensity.",
+            "speaker_mapping": "javert"
+          },
+          "gender": "male",
+          "description": "Gruff and edgy male voice with a distinctive character."
+        },
+        {
+          "key": "pocket_fantine",
+          "id": "pocket_fantine",
+          "name": "Fantine",
+          "meta": {
+            "displayName": "Fantine (Melancholic Female)",
+            "language": "en",
+            "languageName": "English",
+            "age": "young",
+            "category": "narration",
+            "tags": [
+              "pocket",
+              "melancholic",
+              "female",
+              "model:pocket-tts"
+            ],
+            "quality": "high",
+            "sample_text": "Hello, I am Fantine. My voice carries emotion and sensitivity.",
+            "speaker_mapping": "fantine"
+          },
+          "gender": "female",
+          "description": "Melancholic and emotional female voice with expressive depth."
+        },
+        {
+          "key": "pocket_eponine",
+          "id": "pocket_eponine",
+          "name": "Eponine",
+          "meta": {
+            "displayName": "Eponine (Bright Female)",
+            "language": "en",
+            "languageName": "English",
+            "age": "young",
+            "category": "narration",
+            "tags": [
+              "pocket",
+              "bright",
+              "female",
+              "model:pocket-tts"
+            ],
+            "quality": "high",
+            "sample_text": "Hello, I am Eponine. My voice shines with brightness and vitality.",
+            "speaker_mapping": "eponine"
+          },
+          "gender": "female",
+          "description": "Bright and lively female voice with a spirited character."
+        },
+        {
+          "key": "pocket_azelma",
+          "id": "pocket_azelma",
+          "name": "Azelma",
+          "meta": {
+            "displayName": "Azelma (Soft Female)",
+            "language": "en",
+            "languageName": "English",
+            "age": "young",
+            "category": "narration",
+            "tags": [
+              "pocket",
+              "soft",
+              "female",
+              "model:pocket-tts"
+            ],
+            "quality": "high",
+            "sample_text": "Hello, I am Azelma. My voice is soft and gentle.",
+            "speaker_mapping": "azelma"
+          },
+          "gender": "female",
+          "description": "Soft and delicate female voice with gentle warmth."
+        }
+      ],
+      "quality": {
+        "status": "pass",
+        "check": "product-check (B07, three-chapter book, CPU), REVIEW for listening items only",
+        "date": "2026-10-30",
+        "report": "docs/research/implementation-plan/r05b-report.md"
+      },
+      "id": "kyutai--pocket-tts-without-voice-cloning",
+      "files": [
+        {
+          "path": "languages/english/model.safetensors",
+          "revision": "e7205b6ee50e654a5ea19f0e9df2b0813b05e921",
+          "size_bytes": 219029196,
+          "sha256": "916ccd2686e9311cb40054893a3c4284393d658825ffc714a276f3e9b152344f"
+        },
+        {
+          "path": "languages/english/tokenizer.json",
+          "revision": "00eac05ed3d16bdc3f6b5d598874019c34a89214",
+          "size_bytes": 245020,
+          "sha256": "f498428e1eafee50492f7be13dc9bfafcfc12e508cd0eb1b01c92ecd5d8c6687"
+        },
+        {
+          "path": "languages/english/embeddings/alba.safetensors",
+          "revision": "4e1e0a3e611c51c0b4ed8174fc10f32a54644303",
+          "size_bytes": 6195000,
+          "sha256": "d291428b416d6c36a1de7835e51dbe1e334b75e5af512bb18dd23a1047fe8f3b"
+        },
+        {
+          "path": "languages/english/embeddings/azelma.safetensors",
+          "revision": "4e1e0a3e611c51c0b4ed8174fc10f32a54644303",
+          "size_bytes": 7964472,
+          "sha256": "1592ba7eb6784302ccaa8d48a7304f14f6fd7503969fb0466efcab607827477c"
+        },
+        {
+          "path": "languages/english/embeddings/eponine.safetensors",
+          "revision": "4e1e0a3e611c51c0b4ed8174fc10f32a54644303",
+          "size_bytes": 6932280,
+          "sha256": "0bcc4878ad3183ef8bfdbaf9224c5a71f1d18fe944fb494818c37e1f8ea6c7d0"
+        },
+        {
+          "path": "languages/english/embeddings/fantine.safetensors",
+          "revision": "4e1e0a3e611c51c0b4ed8174fc10f32a54644303",
+          "size_bytes": 6539064,
+          "sha256": "8b6a1c253d39c701e7b70e349796d10b4ce6f35bc58254f0e0caa572f1d41464"
+        },
+        {
+          "path": "languages/english/embeddings/javert.safetensors",
+          "revision": "4e1e0a3e611c51c0b4ed8174fc10f32a54644303",
+          "size_bytes": 6195000,
+          "sha256": "580e4b72d4065e906c14e580f97da478c9707bead74b0ef9c049e0ca8de997d9"
+        },
+        {
+          "path": "languages/english/embeddings/marius.safetensors",
+          "revision": "4e1e0a3e611c51c0b4ed8174fc10f32a54644303",
+          "size_bytes": 6195000,
+          "sha256": "b05946f39371f8853902b0486231f2d401c8a9570da9978329120d4ecfd009e9"
+        }
+      ],
+      "resources": {
+        "download_bytes": 259295032,
+        "ram_gb": 3,
+        "backends": [
+          "cpu"
+        ],
+        "speed_note": ""
+      }
+    },
+    {
+      "display_name": "Text reader for scans: finds lines",
+      "description": "Reads text from scanned pages, on this computer.",
+      "family": "ocr_onnx",
+      "family_version": 1,
+      "repo": "PaddlePaddle/PP-OCRv6_small_det_onnx",
+      "revision": "28fe5895c24fd108c19eb3e8479f4ab385fbfc62",
+      "license": {
+        "id": "apache-2.0",
+        "name": "Apache License 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0",
+        "summary": "Permissive; keep the license and notices.",
+        "commercial_use": "yes"
+      },
+      "languages": [
+        "en"
+      ],
+      "settings": {
+        "part": "det"
+      },
+      "component": true,
+      "voices": [],
+      "quality": {
+        "status": "pass",
+        "check": "character error rate on scanned pages",
+        "date": "2026-10-30",
+        "report": "docs/research/implementation-plan/p02e-report.md"
+      },
+      "id": "paddlepaddle--pp-ocrv6_small_det_onnx",
+      "files": [
+        {
+          "path": "inference.onnx",
+          "size_bytes": 9880512,
+          "sha256": "d73e0058b7a8086bbd57f3d10b8bcd4ff95363f67e06e2762b5e814fe9c9410e"
+        },
+        {
+          "path": "inference.yml",
+          "size_bytes": 885,
+          "sha256": "193f435274bf9f0b5f71a929bbfbcf148282df7e633b34e7c373e8f44741b516"
+        }
+      ],
+      "resources": {
+        "download_bytes": 9881397,
+        "ram_gb": 1,
+        "backends": [
+          "cpu"
+        ],
+        "speed_note": ""
+      }
+    },
+    {
+      "display_name": "Text reader for scans: reads lines",
+      "description": "Reads text from scanned pages, on this computer.",
+      "family": "ocr_onnx",
+      "family_version": 1,
+      "repo": "PaddlePaddle/PP-OCRv6_small_rec_onnx",
+      "revision": "b8f84f0b80c529de40b4fbb3544b84fa7233a513",
+      "license": {
+        "id": "apache-2.0",
+        "name": "Apache License 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0",
+        "summary": "Permissive; keep the license and notices.",
+        "commercial_use": "yes"
+      },
+      "languages": [
+        "en"
+      ],
+      "settings": {
+        "part": "rec"
+      },
+      "component": true,
+      "voices": [],
+      "quality": {
+        "status": "pass",
+        "check": "character error rate on scanned pages",
+        "date": "2026-10-30",
+        "report": "docs/research/implementation-plan/p02e-report.md"
+      },
+      "id": "paddlepaddle--pp-ocrv6_small_rec_onnx",
+      "files": [
+        {
+          "path": "inference.onnx",
+          "size_bytes": 21159378,
+          "sha256": "5435fd747c9e0efe15a96d0b378d5bd157e9492ed8fd80edf08f30d02fa24634"
+        },
+        {
+          "path": "inference.yml",
+          "size_bytes": 150579,
+          "sha256": "ab078671bb49f06228eadccd34f1bb501e157f7a047095ffb943ba81512c77d1"
+        }
+      ],
+      "resources": {
+        "download_bytes": 21309957,
+        "ram_gb": 1,
+        "backends": [
+          "cpu"
+        ],
+        "speed_note": ""
+      }
+    },
+    {
+      "display_name": "Kokoro",
+      "description": "Kokoro 82M (v1.0, 8-bit), the most downloaded open speech model on Hugging Face. Warm, clear voices; about 1.4x real time on CPU.",
+      "family": "sherpa_onnx_tts",
+      "family_version": 1,
+      "repo": "csukuangfj/kokoro-int8-multi-lang-v1_0",
+      "revision": "57adb37fc0e8d4bd430cfc1b8f8c2294945b9af2",
+      "license": {
+        "id": "apache-2.0",
+        "name": "Apache License 2.0",
+        "url": "https://huggingface.co/hexgrad/Kokoro-82M/blob/main/LICENSE",
+        "summary": "Permissive; keep the license and notices.",
+        "commercial_use": "yes"
+      },
+      "languages": [
+        "en"
+      ],
+      "settings": {
+        "kind": "kokoro"
+      },
+      "attribution": [
+        "Kokoro-82M by hexgrad (https://huggingface.co/hexgrad/Kokoro-82M), Apache-2.0. ONNX export for sherpa-onnx by Fangjun Kuang (k2-fsa)."
+      ],
+      "voices": [
+        {
+          "key": "af_heart",
+          "name": "Heart",
+          "gender": "female",
+          "speaker": 3
+        },
+        {
+          "key": "af_bella",
+          "name": "Bella",
+          "gender": "female",
+          "speaker": 2
+        },
+        {
+          "key": "af_nicole",
+          "name": "Nicole",
+          "gender": "female",
+          "speaker": 6
+        },
+        {
+          "key": "af_sarah",
+          "name": "Sarah",
+          "gender": "female",
+          "speaker": 9
+        },
+        {
+          "key": "am_adam",
+          "name": "Adam",
+          "gender": "male",
+          "speaker": 11
+        },
+        {
+          "key": "am_michael",
+          "name": "Michael",
+          "gender": "male",
+          "speaker": 16
+        },
+        {
+          "key": "bf_emma",
+          "name": "Emma",
+          "gender": "female",
+          "speaker": 21
+        },
+        {
+          "key": "bm_george",
+          "name": "George",
+          "gender": "male",
+          "speaker": 26
+        }
+      ],
+      "quality": {
+        "status": "pass",
+        "check": "product-check (B07, three-chapter book), REVIEW for listening items only",
+        "date": "2026-10-30",
+        "report": "docs/research/implementation-plan/r05b-report.md"
+      },
+      "id": "csukuangfj--kokoro-int8-multi-lang-v1_0",
+      "files": [
+        {
+          "path": "model.int8.onnx",
+          "size_bytes": 114202993,
+          "sha256": "75635ea3b85a32d00094dcdd61a258aba87c160f7c264c304a7b3ae9d734195e"
+        },
+        {
+          "path": "voices.bin",
+          "size_bytes": 28200960,
+          "sha256": "1c5a5b983d3d50d8586d437a51f3faa2da7919ce76a013c081e65671a3447c29"
+        },
+        {
+          "path": "tokens.txt",
+          "size_bytes": 687,
+          "sha256": "6ebb6bb288f20f3ae8d004d3c2ca27697da27c037d75e81a60e2a6a663f95425"
+        },
+        {
+          "path": "lexicon-us-en.txt",
+          "size_bytes": 5956885,
+          "sha256": "7daaab53a181be9885b853a8582bf1838186317e5dadacbcef9c426d6fa0da14"
+        }
+      ],
+      "resources": {
+        "download_bytes": 148361525,
+        "ram_gb": 2,
+        "backends": [
+          "cpu"
+        ],
+        "speed_note": ""
+      }
+    },
+    {
+      "display_name": "Kitten Mini",
+      "description": "KittenML Kitten TTS Mini 0.1: very small, faster than real time on any CPU.",
+      "family": "sherpa_onnx_tts",
+      "family_version": 1,
+      "repo": "csukuangfj/kitten-mini-en-v0_1-fp16",
+      "revision": "2472be3b6436106f15d361747c225daa209d7bd8",
+      "license": {
+        "id": "apache-2.0",
+        "name": "Apache License 2.0",
+        "url": "https://huggingface.co/KittenML/kitten-tts-mini-0.1",
+        "summary": "Permissive; keep the license and notices.",
+        "commercial_use": "yes"
+      },
+      "languages": [
+        "en"
+      ],
+      "settings": {
+        "kind": "kitten"
+      },
+      "attribution": [
+        "Kitten TTS by KittenML (https://huggingface.co/KittenML), Apache-2.0. ONNX export for sherpa-onnx by Fangjun Kuang (k2-fsa)."
+      ],
+      "voices": [
+        {
+          "key": "voice2_m",
+          "name": "Voice 2 (male)",
+          "gender": "male",
+          "speaker": 0
+        },
+        {
+          "key": "voice2_f",
+          "name": "Voice 2 (female)",
+          "gender": "female",
+          "speaker": 1
+        },
+        {
+          "key": "voice3_m",
+          "name": "Voice 3 (male)",
+          "gender": "male",
+          "speaker": 2
+        },
+        {
+          "key": "voice3_f",
+          "name": "Voice 3 (female)",
+          "gender": "female",
+          "speaker": 3
+        },
+        {
+          "key": "voice4_m",
+          "name": "Voice 4 (male)",
+          "gender": "male",
+          "speaker": 4
+        },
+        {
+          "key": "voice4_f",
+          "name": "Voice 4 (female)",
+          "gender": "female",
+          "speaker": 5
+        },
+        {
+          "key": "voice5_m",
+          "name": "Voice 5 (male)",
+          "gender": "male",
+          "speaker": 6
+        },
+        {
+          "key": "voice5_f",
+          "name": "Voice 5 (female)",
+          "gender": "female",
+          "speaker": 7
+        }
+      ],
+      "quality": {
+        "status": "pass",
+        "check": "product-check (B07, three-chapter book), REVIEW for listening items only",
+        "date": "2026-10-30",
+        "report": "docs/research/implementation-plan/r05b-report.md"
+      },
+      "id": "csukuangfj--kitten-mini-en-v0_1-fp16",
+      "files": [
+        {
+          "path": "model.fp16.onnx",
+          "size_bytes": 166061300,
+          "sha256": "78c8dee1d945a334924c280cbe85af846fa0421808f0f760cb5c8d258be9ec86"
+        },
+        {
+          "path": "voices.bin",
+          "size_bytes": 8192,
+          "sha256": "42a40a24a352a38657d6cb86ceee51bbc2b7780b29e04fb60bcdf959adccea01"
+        },
+        {
+          "path": "tokens.txt",
+          "size_bytes": 1064,
+          "sha256": "934a4188addc7665dd3410256bb622169242357fbb99d840d9351209b486dabb"
+        }
+      ],
+      "resources": {
+        "download_bytes": 166070556,
+        "ram_gb": 1,
+        "backends": [
+          "cpu"
+        ],
+        "speed_note": ""
+      }
+    },
+    {
+      "display_name": "Piper Alba (British)",
+      "description": "Piper VITS voice from the Open Home Foundation: a clear Scottish English voice, several times faster than real time on CPU.",
+      "family": "sherpa_onnx_tts",
+      "family_version": 1,
+      "repo": "csukuangfj/vits-piper-en_GB-alba-medium",
+      "revision": "7e469a54c7a4f5bd191cae788e197266e2c9c5ac",
+      "license": {
+        "id": "cc-by-4.0",
+        "name": "Creative Commons Attribution 4.0",
+        "url": "https://huggingface.co/rhasspy/piper-voices/blob/main/en/en_GB/alba/medium/MODEL_CARD",
+        "summary": "Credit the authors.",
+        "commercial_use": "yes"
+      },
+      "languages": [
+        "en"
+      ],
+      "settings": {
+        "kind": "vits",
+        "espeak_voice": "en-gb-x-rp"
+      },
+      "attribution": [
+        "Piper voice en_GB-alba-medium (rhasspy/piper-voices), trained on the Edinburgh datashare Alba dataset, CC BY 4.0. Conversion for sherpa-onnx by Fangjun Kuang (k2-fsa)."
+      ],
+      "voices": [
+        {
+          "key": "alba",
+          "name": "Alba",
+          "gender": "female",
+          "speaker": 0
+        }
+      ],
+      "quality": {
+        "status": "fail",
+        "check": "product-check (B07, three-chapter book)",
+        "date": "2026-10-30",
+        "report": "docs/research/implementation-plan/r05b-report.md"
+      },
+      "id": "csukuangfj--vits-piper-en_gb-alba-medium",
+      "files": [
+        {
+          "path": "en_GB-alba-medium.onnx",
+          "size_bytes": 63201430,
+          "sha256": "c904d007a8047ab13628b021351b983d0a2627c0d7a81c64a6fe9ad661adb1cf"
+        },
+        {
+          "path": "en_GB-alba-medium.onnx.json",
+          "size_bytes": 4888,
+          "sha256": "aa965a2f02ecced632c2694e1fc72bbff6d65f265fab567ca945918c73dd89f4"
+        },
+        {
+          "path": "tokens.txt",
+          "size_bytes": 921,
+          "sha256": "87c8ef66eae5473ed0cc0366b3964c736ca6c5f676c979522ea31234e47430b9"
+        }
+      ],
+      "resources": {
+        "download_bytes": 63207239,
+        "ram_gb": 1,
+        "backends": [
+          "cpu"
+        ],
+        "speed_note": ""
+      }
+    }
+  ],
+  "engine_packs": [
+    {
+      "schema": 1,
+      "id": "qwen-runtime",
+      "version": 1,
+      "display_name": "Qwen3-TTS engine",
+      "engine_interface": [
+        1
+      ],
+      "delivery": "builtin",
+      "platform": "linux-x86_64",
+      "backend": "cuda",
+      "license": "Apache-2.0",
+      "families": {
+        "qwen": {
+          "version": 1,
+          "display_name": "Qwen3 TTS",
+          "capabilities": {
+            "streaming": true,
+            "voice_cloning": true,
+            "voice_cloning_model": "qwen--qwen3-tts-12hz-1.7b-base",
+            "voice_design": true,
+            "multi_language": true,
+            "speed_control": true,
+            "emotion_control": true,
+            "low_latency": false,
+            "speaking_rate": {
+              "method": "time_scale",
+              "default": {
+                "book": 1.0,
+                "podcast": 1.0
+              },
+              "letters_per_second": 10.5
+            },
+            "cast": {
+              "default": [
+                "qwen_serena",
+                "qwen_ryan"
+              ],
+              "too_similar": [
+                [
+                  "qwen_dylan",
+                  "qwen_eric"
+                ],
+                [
+                  "qwen_eric",
+                  "qwen_ryan"
+                ],
+                [
+                  "qwen_eric",
+                  "qwen_uncle_fu"
+                ],
+                [
+                  "qwen_ryan",
+                  "qwen_uncle_fu"
+                ],
+                [
+                  "qwen_ono_anna",
+                  "qwen_serena"
+                ],
+                [
+                  "qwen_ono_anna",
+                  "qwen_sohee"
+                ],
+                [
+                  "qwen_ono_anna",
+                  "qwen_vivian"
+                ],
+                [
+                  "qwen_serena",
+                  "qwen_sohee"
+                ],
+                [
+                  "qwen_serena",
+                  "qwen_vivian"
+                ],
+                [
+                  "qwen_sohee",
+                  "qwen_vivian"
+                ]
+              ]
+            },
+            "max_text_length": 10000,
+            "style_instruction": {
+              "variants": [
+                "1.7B"
+              ],
+              "max_chars": 200
+            }
+          },
+          "engine": {
+            "name": "Qwen3 TTS",
+            "version": "1.0.0",
+            "description": "Multilingual AI TTS with voice cloning and design capabilities (10 languages)",
+            "author": "Qwen Team (Alibaba)",
+            "website_url": "https://qwen.ai",
+            "license": "Apache-2.0",
+            "languages": [
+              "zh",
+              "en",
+              "ja",
+              "ko",
+              "de",
+              "fr",
+              "ru",
+              "pt",
+              "es",
+              "it"
+            ],
+            "products": [
+              "0.6B",
+              "1.7B"
+            ],
+            "output_formats": [
+              "wav",
+              "mp3"
+            ],
+            "default_sample_rate": 12000,
+            "requires_model_download": true
+          }
+        }
+      }
+    },
+    {
+      "schema": 1,
+      "id": "pocket-runtime",
+      "version": 1,
+      "display_name": "Pocket TTS engine",
+      "engine_interface": [
+        1
+      ],
+      "delivery": "builtin",
+      "platform": "linux-x86_64",
+      "backend": "cpu",
+      "license": "MIT",
+      "families": {
+        "pocket": {
+          "version": 1,
+          "display_name": "Pocket TTS",
+          "capabilities": {
+            "streaming": false,
+            "voice_cloning": false,
+            "voice_design": false,
+            "multi_language": false,
+            "speed_control": true,
+            "emotion_control": false,
+            "low_latency": true,
+            "speaking_rate": {
+              "method": "time_scale",
+              "default": {
+                "book": 0.85,
+                "podcast": 0.9
+              },
+              "letters_per_second": 13.2,
+              "voice_rates": {
+                "pocket_alba": 0.9,
+                "pocket_marius": 0.81,
+                "pocket_javert": 1.02,
+                "pocket_fantine": 0.99,
+                "pocket_eponine": 1.04,
+                "pocket_azelma": 1.06
+              }
+            },
+            "cast": {
+              "default": [
+                "pocket_fantine",
+                "pocket_javert"
+              ],
+              "too_similar": [
+                [
+                  "pocket_alba",
+                  "pocket_marius"
+                ]
+              ]
+            },
+            "max_text_length": 10000,
+            "text_normalization": "en-spoken-2",
+            "spoken_hums_as": "Yes"
+          },
+          "engine": {
+            "name": "Pocket TTS",
+            "version": "1.0.0",
+            "description": "Kyutai Pocket TTS - CPU-first built-in voices (no custom cloning in current variant)",
+            "author": "Kyutai Labs",
+            "website_url": "https://github.com/kyutai-labs/pocket-tts",
+            "license": "CC-BY-4.0",
+            "languages": [
+              "en"
+            ],
+            "products": [
+              "default"
+            ],
+            "output_formats": [
+              "wav"
+            ],
+            "default_sample_rate": 24000,
+            "requires_model_download": true
+          }
+        }
+      }
+    },
+    {
+      "schema": 1,
+      "id": "supertonic-runtime",
+      "version": 1,
+      "display_name": "Supertonic engine",
+      "engine_interface": [
+        1
+      ],
+      "delivery": "builtin",
+      "platform": "linux-x86_64",
+      "backend": "cpu",
+      "license": "MIT",
+      "families": {
+        "supertonic_onnx": {
+          "version": 1,
+          "display_name": "Supertonic",
+          "capabilities": {
+            "streaming": false,
+            "voice_cloning": false,
+            "voice_design": false,
+            "multi_language": false,
+            "speed_control": true,
+            "emotion_control": false,
+            "low_latency": true,
+            "speaking_rate": {
+              "method": "native",
+              "default": {
+                "book": 0.9,
+                "podcast": 0.95
+              },
+              "letters_per_second": 12.5
+            },
+            "cast": {
+              "default": [
+                "hub:supertone--supertonic-3:F5",
+                "hub:supertone--supertonic-3:M2"
+              ],
+              "too_similar": [
+                [
+                  "hub:supertone--supertonic-3:F1",
+                  "hub:supertone--supertonic-3:F2"
+                ],
+                [
+                  "hub:supertone--supertonic-3:F1",
+                  "hub:supertone--supertonic-3:F3"
+                ],
+                [
+                  "hub:supertone--supertonic-3:F2",
+                  "hub:supertone--supertonic-3:F3"
+                ],
+                [
+                  "hub:supertone--supertonic-3:F2",
+                  "hub:supertone--supertonic-3:F4"
+                ],
+                [
+                  "hub:supertone--supertonic-3:M1",
+                  "hub:supertone--supertonic-3:M2"
+                ],
+                [
+                  "hub:supertone--supertonic-3:M1",
+                  "hub:supertone--supertonic-3:M3"
+                ],
+                [
+                  "hub:supertone--supertonic-3:M2",
+                  "hub:supertone--supertonic-3:M3"
+                ],
+                [
+                  "hub:supertone--supertonic-3:M3",
+                  "hub:supertone--supertonic-3:M4"
+                ]
+              ]
+            },
+            "max_text_length": 1200,
+            "text_normalization": "en-numbers-1"
+          },
+          "engine": {
+            "name": "Supertonic",
+            "version": "1.0.0",
+            "description": "Supertone Supertonic ONNX models from Hugging Face, run on CPU (voices come from installed models; R05)",
+            "author": "Supertone Inc.",
+            "website_url": "https://github.com/supertone-inc/supertonic",
+            "license": "OpenRAIL-M",
+            "languages": [
+              "en"
+            ],
+            "products": [
+              "default"
+            ],
+            "output_formats": [
+              "wav"
+            ],
+            "default_sample_rate": 44100,
+            "requires_model_download": true
+          }
+        }
+      }
+    },
+    {
+      "schema": 1,
+      "id": "speech-onnx",
+      "version": 6,
+      "display_name": "ONNX speech engine (sherpa-onnx with eSpeak NG phonemes)",
+      "engine_interface": [
+        1
+      ],
+      "delivery": "download",
+      "platform": "linux-x86_64",
+      "backend": "cpu",
+      "python": "3.11.16",
+      "index": "pypi",
+      "license": "sherpa-onnx: Apache-2.0. onnxruntime: MIT. piper-tts with eSpeak NG: GPL-3.0-or-later. Yapper's engine program: MIT.",
+      "notices": [
+        "This engine runs as its own program. Your computer downloads sherpa-onnx (k2-fsa), onnxruntime (Microsoft) and piper-tts with eSpeak NG (Open Home Foundation) directly from the Python Package Index, each checked against a pinned checksum. Yapper does not include or redistribute them. piper-tts and eSpeak NG are licensed under the GNU GPL version 3 or later; their source is at https://github.com/OHF-Voice/piper1-gpl and https://github.com/espeak-ng/espeak-ng."
+      ],
+      "families": {
+        "sherpa_onnx_tts": {
+          "version": 1,
+          "display_name": "Kokoro, Kitten and Piper",
+          "capabilities": {
+            "streaming": false,
+            "voice_cloning": false,
+            "voice_design": false,
+            "multi_language": false,
+            "speed_control": true,
+            "emotion_control": false,
+            "low_latency": true,
+            "max_text_length": 400,
+            "text_normalization": "en-spoken-3",
+            "speaking_rate": {
+              "method": "native",
+              "default": {
+                "book": 1.0,
+                "podcast": 1.0
+              },
+              "voice_rates": {
+                "hub:csukuangfj--kokoro-int8-multi-lang-v1_0:af_heart": 0.8,
+                "hub:csukuangfj--kokoro-int8-multi-lang-v1_0:af_bella": 0.8,
+                "hub:csukuangfj--kokoro-int8-multi-lang-v1_0:af_nicole": 0.8,
+                "hub:csukuangfj--kokoro-int8-multi-lang-v1_0:af_sarah": 0.8,
+                "hub:csukuangfj--kokoro-int8-multi-lang-v1_0:am_adam": 0.8,
+                "hub:csukuangfj--kokoro-int8-multi-lang-v1_0:am_michael": 0.8,
+                "hub:csukuangfj--kokoro-int8-multi-lang-v1_0:bf_emma": 0.8,
+                "hub:csukuangfj--kokoro-int8-multi-lang-v1_0:bm_george": 0.8,
+                "hub:csukuangfj--kitten-mini-en-v0_1-fp16:voice2_m": 0.95,
+                "hub:csukuangfj--kitten-mini-en-v0_1-fp16:voice2_f": 0.95,
+                "hub:csukuangfj--kitten-mini-en-v0_1-fp16:voice3_m": 0.95,
+                "hub:csukuangfj--kitten-mini-en-v0_1-fp16:voice3_f": 0.95,
+                "hub:csukuangfj--kitten-mini-en-v0_1-fp16:voice4_m": 0.95,
+                "hub:csukuangfj--kitten-mini-en-v0_1-fp16:voice4_f": 0.95,
+                "hub:csukuangfj--kitten-mini-en-v0_1-fp16:voice5_m": 0.95,
+                "hub:csukuangfj--kitten-mini-en-v0_1-fp16:voice5_f": 0.95,
+                "hub:csukuangfj--vits-piper-en_gb-alba-medium:alba": 0.72
+              }
+            }
+          },
+          "layouts": [
+            {
+              "name": "kokoro",
+              "required": [
+                "model*.onnx",
+                "voices.bin",
+                "tokens.txt",
+                "lexicon-us-en.txt"
+              ],
+              "wanted": [
+                "model.int8.onnx",
+                "model.onnx",
+                "voices.bin",
+                "tokens.txt",
+                "lexicon-us-en.txt"
+              ],
+              "settings": {
+                "kind": "kokoro"
+              },
+              "ram_gb": 2,
+              "voices": [
+                {
+                  "key": "af_heart",
+                  "name": "Heart",
+                  "gender": "female",
+                  "speaker": 3
+                },
+                {
+                  "key": "af_bella",
+                  "name": "Bella",
+                  "gender": "female",
+                  "speaker": 2
+                },
+                {
+                  "key": "af_nicole",
+                  "name": "Nicole",
+                  "gender": "female",
+                  "speaker": 6
+                },
+                {
+                  "key": "af_sarah",
+                  "name": "Sarah",
+                  "gender": "female",
+                  "speaker": 9
+                },
+                {
+                  "key": "am_adam",
+                  "name": "Adam",
+                  "gender": "male",
+                  "speaker": 11
+                },
+                {
+                  "key": "am_michael",
+                  "name": "Michael",
+                  "gender": "male",
+                  "speaker": 16
+                },
+                {
+                  "key": "bf_emma",
+                  "name": "Emma",
+                  "gender": "female",
+                  "speaker": 21
+                },
+                {
+                  "key": "bm_george",
+                  "name": "George",
+                  "gender": "male",
+                  "speaker": 26
+                }
+              ]
+            },
+            {
+              "name": "kitten",
+              "required": [
+                "model*.onnx",
+                "voices.bin",
+                "tokens.txt"
+              ],
+              "wanted": [
+                "model.fp16.onnx",
+                "model.onnx",
+                "voices.bin",
+                "tokens.txt"
+              ],
+              "settings": {
+                "kind": "kitten"
+              },
+              "ram_gb": 1,
+              "voices": [
+                {
+                  "key": "voice2_m",
+                  "name": "Voice 2 (male)",
+                  "gender": "male",
+                  "speaker": 0
+                },
+                {
+                  "key": "voice2_f",
+                  "name": "Voice 2 (female)",
+                  "gender": "female",
+                  "speaker": 1
+                },
+                {
+                  "key": "voice3_m",
+                  "name": "Voice 3 (male)",
+                  "gender": "male",
+                  "speaker": 2
+                },
+                {
+                  "key": "voice3_f",
+                  "name": "Voice 3 (female)",
+                  "gender": "female",
+                  "speaker": 3
+                },
+                {
+                  "key": "voice4_m",
+                  "name": "Voice 4 (male)",
+                  "gender": "male",
+                  "speaker": 4
+                },
+                {
+                  "key": "voice4_f",
+                  "name": "Voice 4 (female)",
+                  "gender": "female",
+                  "speaker": 5
+                },
+                {
+                  "key": "voice5_m",
+                  "name": "Voice 5 (male)",
+                  "gender": "male",
+                  "speaker": 6
+                },
+                {
+                  "key": "voice5_f",
+                  "name": "Voice 5 (female)",
+                  "gender": "female",
+                  "speaker": 7
+                }
+              ]
+            },
+            {
+              "name": "vits",
+              "required": [
+                "*.onnx",
+                "*.onnx.json",
+                "tokens.txt"
+              ],
+              "wanted": [
+                "*.onnx",
+                "*.onnx.json",
+                "tokens.txt"
+              ],
+              "settings": {
+                "kind": "vits"
+              },
+              "ram_gb": 1,
+              "voices": "speaker_map"
+            }
+          ]
+        }
+      },
+      "install_bytes": 340000000,
+      "requirements": [
+        "flatbuffers==25.12.19 --hash=sha256:7634f50c427838bb021c2d66a3d1168e9d199b0607e6329399f04846d42e20b4",
+        "numpy==2.4.6 --hash=sha256:001fbb8e08d942dd57599e781f2472269ee7f2755fae407b4f67b2f0b17da3f1 --hash=sha256:0280e0356c0829a18d9de1cb7eee50ec22ca639878d7240307ca0943d73cd2c4 --hash=sha256:043191bfa8eab18c776647b62723ac9dddece59743b13f49b2016094129c2b3f --hash=sha256:06ca2f61ec4385a07a6977c55ba998a4466c123642b4a32694d3128fce18c079 --hash=sha256:0a041d3d761dc3c35cc56ce0351506a02bcbc25f7b169f652435141a17db9096 --hash=sha256:0ab0a9c4ffb1a6d95ef519fe4247dba8eb6b18ad93999f76b7f657039acabd47 --hash=sha256:0c9136e14ed34a9e343a31c533d78a9813a69a3148332bce5e9821cb2f996e66 --hash=sha256:110f8b71aacb688ec69062bb7f6938a0f8acb01b7c1c4beb453c65b6d234584d --hash=sha256:112b06a867b235ef466ed3508ddf0238050df9c727cafb5301ac385b899189a1 --hash=sha256:17f9ade344e7d9b464a084d69bcf18fc691cb1db67c62ed80820bf4926d78f0e --hash=sha256:1e254a00cdf42b1e4d5b3d68d33af63268d41340d8885df2ab6470f2e1500147 --hash=sha256:1e978ec1e8bd0e0e4de6bb75de9d30cbb74db6b6a2bb727618613703ca0167dd --hash=sha256:25c692919ac5a01f170a3bfcd62d745b24fd095c353d50812637d6fcab442e75 --hash=sha256:260a5d70215b61ab4fadf5c7baacd64821842975eea312125ed3c39a6391b063 --hash=sha256:2803abfebfc990042cd494d8ce2d5f82e9d847af6d35ec486923aa19dbad5e73 --hash=sha256:29a287e0cf63ff528da061de6b9f64a4618da591ca1046aafc54062e40ca7eab --hash=sha256:29cb7f67d10b479ff07c17d33e39f78c07f71c40ef30d63c153d340e96cd3fb4 --hash=sha256:3213d622a0283a39a93d188f3cf72b26862df52fbb4ca3697f51705016523d41 --hash=sha256:33111801a01c12a8a1e3721f0a9232f8cfc8ae2c6b7098167e6f623c6073f402 --hash=sha256:357cc07a6d7b0b182ff02249616a03742827ebb1277546b5c7cd7f7620a45698 --hash=sha256:38efbc8de75c7a0fc1ac190162d892787f3f47b57cc291231aafee36b80982b7 --hash=sha256:4081eb135ac24158bd51cdfbef16f1c64df7063b1143f24731387137c092bec8 --hash=sha256:40fdc1ae7125e518ea98e53e69a4ebc27e1fd50510c47b7ea130cf21e5e1d42b --hash=sha256:4cfe66903cc32a9921a6733d96b19bb6abf310397581bbad89c228f5abaf0ee8 --hash=sha256:511dbaf848decaaaf4b4ca48032619fb3138710c4bf7da7617765edad1ef96b0 --hash=sha256:55cced7c52e981362f708ad635198e97a752dfba412cc03c23bbf3bd8d5cd662 --hash=sha256:56b39e5e0622a09a25bf5baf62f4bcf0cb8a41ae6e2819cf49bbc5a74c083f91 --hash=sha256:5dbbdb29840ca3d91ee0fece42fc29278886d908280bfec0a5846c6f901a3eb0 --hash=sha256:5f9fb9157b4ce2971008323afe46053787b526ef624fea915b261468a8421a0f --hash=sha256:6180d8b35af935aed8ece3a85e0a43f87393ae0ac87c8d2c8bd2c993f7270ef3 --hash=sha256:68a5124b13fa6cc2086764a20005d30bc0548146f7f5322f02fce212ca14317f --hash=sha256:68bb27509ac1b9a3443094260f6326150663b06abe40b73a2f81160623da5b67 --hash=sha256:6f41ae150c4e32db4f3310cdaf64b1593a03dbabe29eec77fc9b50fe64061df6 --hash=sha256:7265a2f3d436e54ef9f2b52b5c937e6be778781bd97a590319d7348f1c1ca997 --hash=sha256:72fbe16c6fac95aedf5937fa873445cec2110be35d8a4e9433d7501fd98dae6b --hash=sha256:7d92c3819208a60205a12a245c91ad70cb0a85336659b19b834205573ac8456e --hash=sha256:8155154c7c691289fe18f510b5d4657c68c67989f293f0535a91360392ff6538 --hash=sha256:81a1cca95ed5bb92aa8b10dd2cdc9a0d3853a50fad926c28b5d7e8ea54389627 --hash=sha256:89cd468399cfd2504718f0ba50e410dca55a170b61a02ad92bb18c8a65186e93 --hash=sha256:8ad03c0965fb3c692200e74d458ca28c1dbb4ce96f9a479a8aa041ad5fabca02 --hash=sha256:90f9849678c75fe7afa2d348ac842c168b0a4d3d61919687216dfc547976d853 --hash=sha256:948424b06129ce883307e8cff868c31396d8dc7630a59c61d70d98dbe70f222c --hash=sha256:9cd5ffd25db4e7ba6a375693b3fc0fc1791ec636c17db3720da19bde7180ec43 --hash=sha256:a0df0043bdb289bde1f62da130d20df23d58b45429f752bc7a8fc5325a225ecd --hash=sha256:a2c306dea656c12c68f51f4cea133cbe78ca7435eb28c735eac1d3ebe73be6e8 --hash=sha256:a7830bab239b79cda9c08c2da014761cafb48da6150e1da17ac06283f43b6089 --hash=sha256:a7c711e21628b52034bb5ab8d1bce291f752fcc5e92accc615778acee1ff4778 --hash=sha256:aaf159caa35993cb1f56fb9b8e4610d35758e7ca005412eb1daa856a78c9c4b1 --hash=sha256:ae506e6902902557576a26ff33eda8695e7ecb3cb36c3b573a0765dee114ebdb --hash=sha256:b507f5c4c1d508876d1819b6bf9a49d365b96320b5d4993426b33a23ca4b8261 --hash=sha256:bf162abab1c1a736333192707cef898e735a5ca00f38f27eeedf44b39d9e85eb --hash=sha256:c1a2af6c6ef86344a6b0db6b97834208bf598db514f2b155042439b62605601a --hash=sha256:c2d37ab77531417474168eb79d6d80b14f821a966818505d03013d0833edb7a8 --hash=sha256:c4fc99836233ea196540b17ab0983aff60ed07941751930f5f4d05bc3b3b7359 --hash=sha256:d581b735e177fdcdce6fed8e7e8880a3fb6ee4e3653a3ac6af01c6f4c03effc5 --hash=sha256:d6da64deb6b8ed903e7560180a92f2d804ee1ba5eeb849ac2748b8c1aba1f6d7 --hash=sha256:d8e8286dd7cea7895157318d1b91cdacac64c479f3cbc8dce548331728484751 --hash=sha256:ddea102b48f9e339f3948bf22040944184627a30fdf7f858667673b9c5f033c8 --hash=sha256:dfa20cc6ca228e6b155b11da03825975ce66aea520985dbbddf0f2a5a495c605 --hash=sha256:e3e5193ef5a3dc73bceee50f7fdc2c90dbb76c42df8d8fae3d1067a583df579e --hash=sha256:e3eeb0aabd6bd5ce64faae67e9935203a6991b4bc2a485a767fbafb2c5125f45 --hash=sha256:e5805d5a22fd19c8ccff10a9561f9df94436b0545619ea579db2d3c35294bce2 --hash=sha256:e85b752a1e912b70eaad4fafbd4d1238007ab221de2009b9a2f5ae7461239895 --hash=sha256:eaf7fa2de5c0be8ae6ff8e9bea2ccd725e980541244521d8d4b5f3354a27babe --hash=sha256:ebfb099f8dcf083deef3ac1ca4c1503f387cf76296fcb3816b66f5ecb5f54fdb --hash=sha256:ece3d2cfe132e7d51f44a832b303895e6f2d499c5e74dfbdb06ee246147a304a --hash=sha256:ed9749eef4cbd126da3dc1d6bcb3a57f5eb7ac6a6484146bdbf743f552dfc577 --hash=sha256:ede83e07a75dd06bc501566c1eca2afc0d61677c1472ac9ad93fdee6e638a48d --hash=sha256:ef4aea96ce4d3b074422cb4f2f64e216bf9e213004bb58ecfdf50ea02ea8eb9a --hash=sha256:f3a3570c4a2a16746ac2c31a7c7c7b0c186b95ce902e33db6f28094ed7387dda --hash=sha256:f407cb6b8e9d6d8c626bc73c945db1706035af8fd632295547bf1c9e46d092d6 --hash=sha256:f74a575920ab21fe304421a3fc28793d82e299cae9eccb37084e9fc7f3617c20",
+        "onnxruntime==1.31.1 --hash=sha256:0558f29d5f6ac09957390c9c5495931485ee8ae7f0ce781ccee86a0ae5c2348b --hash=sha256:075147c2e2430b4b29c436bffa78537b902a6ed58ed66f99ae3c6795e2081cb5 --hash=sha256:0a3998e18cb667ef54287556bd62291a788ed235723dd90c83b2294b24e71d81 --hash=sha256:0b9a492176886992e0e875f06bc0367e333f5fff11711a2d642e18b02f3009cc --hash=sha256:1f3dea47f2f0e5117c2404cea7d21fd253ae7836a3bf167a501cdfbb2600d536 --hash=sha256:4d5f5fcc01f0c334d282a8991eab44e7752ad01c47b336d848ba43eb38084958 --hash=sha256:564d7b83fb3e94fb3d18629c6b339e9bce10966dd29a8442c433175aac3d60fd --hash=sha256:5752bd508126ae7c49894d3b9d2e83f0c3d487319246d04c444b393308d7ad7f --hash=sha256:60b6b69bfe580eab576cacc5d132a0e9cf2a37fcfd18d46dd191042b1d1ed0d7 --hash=sha256:6711108bcddf8b401145fb31ac93776b8ca6e7e7e56acdfa9d478575b8df9a2f --hash=sha256:74a6a52994616c4d18b33db1e13c226333a70a6ba07480a5cab9c2a50dff1430 --hash=sha256:8536ac43682caa7492c46d6cfd4c3c8db288dcf0619508431a22170b670ee1d0 --hash=sha256:93800007a7023b3ab26ad72e6463d0d57d84ead49a2f6341954d91438e046bc0 --hash=sha256:96dd2564b10ea7153ad9c207e7cd8e5917cb3ba521e0e0a62ac03486fdc8d56c --hash=sha256:ae0987aedb9ae589f3395615c58b22aad2eae6657b14508cec70c24b367cfad1 --hash=sha256:ae8a9a351efda685cc59a66226cdefaa37a126c1d66872ca23a2de9425326130 --hash=sha256:c20d7f15d84427db070b163f78c2c7146cc93edd6113fa7327671259a24184fe --hash=sha256:c3d91b5de31e2fc82d71bd65b2b22bddee8b49057a3a36338e9a868e0ea90c05 --hash=sha256:c878686b75cade1ed59131aa018ab004b1e64368b0d54041912450b9642cf04f --hash=sha256:da05378364c44d4407e463982d2bf8d5e4cfea873283757e48beeb41df97b7f3 --hash=sha256:dcaedc50333876f3829ab966b242147f0e548229e29c36fe44622ecf748c25ee --hash=sha256:e4ad067d36e2220218e085d7223283b2ee1bc73d887e811fd14d21cf901a11ee --hash=sha256:fc01b4e7c0a81778fb741bcf5c16b7871d196275f6240720a8b8bfd9f0c0af14 --hash=sha256:fe8b9ac1ae8e894e12c47ee82e4f6dfc1835768133687257866469fda80d0bf1",
+        "packaging==26.3 --hash=sha256:94edc256424af38762eb31306eed28beb9f0efc50a8837492c9d6fd6004aed79 --hash=sha256:d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+        "pathvalidate==3.3.1 --hash=sha256:5263baab691f8e1af96092fa5137ee17df5bdfbd6cff1fcac4d6ef4bc2e1735f --hash=sha256:b18c07212bfead624345bb8e1d6141cdcf15a39736994ea0b94035ad2b1ba177",
+        "piper-tts==1.8.0 --hash=sha256:25b4d3f31ff70c8fa7151908e00aaa5650cbdf16bca8fcf21299f3941b89a7d3 --hash=sha256:33e7425933e9290fe651ae127916ed1ca6104cfa3d94e9049295dd3a5c449382 --hash=sha256:3f60c1917de6d8e8033f395878ad3f88f6dfee88a8b05f98971a275f76a38484 --hash=sha256:5da9bfdb05dfe15da3536859d422e605483ffa6d2b3ec2c5b9593bae6b5aa6a4 --hash=sha256:830588aded347df579c91a32703e0fc2a3685d84f1e3533b14f2de69135d4904 --hash=sha256:98c7dd791b2be0f8732e5c9cefd86c54200ac0360e43c643c937bf18ac0e941a",
+        "protobuf==7.36.2 --hash=sha256:497d0463ff3316681da6c0b9e8d06cb465d61abce00b613ab42226175644d1bb --hash=sha256:89f23aa53c24553a2416fd4fd1ec06f74fa42b14b546d8883128813f775bbfd2 --hash=sha256:912c1221170e16c08d1f086762f563dd61ff83c18b5fa6652952dfaded66f728 --hash=sha256:a300819d441e078a5608c0d3c709796bb548136058fda017ae51d425b44fd353 --hash=sha256:bdb3a345d48db958e6ce1f18e508beb0cc981d64f24088427549c866cd039f1e --hash=sha256:cbc70b17ee27e28894c7fee8bb04be1abead49e936bc70eb60052531eee2079e --hash=sha256:e11e1f0180583a2af89db6a2ecd9e8dc40aa6d2988ca175bfd0e6d12ea72d74e --hash=sha256:f4fee11ec330d238b34a05c9b675f693c20415d1c5bd7d5320cc2f8a798eb9cf",
+        "sherpa-onnx==2.0.1 --hash=sha256:016917cd53e3a78295d77859ec3a961f64233d03b537b5c18093bf524c67b76a --hash=sha256:05ee9b6a3a0c00a8ed3cc663cb43e9bcfc8946b84b258b3f4ae30adc29d352bc --hash=sha256:08dba29c595183af42e28ba7d71bcb3b9f3aee5b4788089d47c7a0a263d6c5b2 --hash=sha256:0cbd91033dd7027464aa34b0f18a4da3eb8ed6382011736c6693ac19bba05341 --hash=sha256:0ffd8ccb770bed022e191af11408dd14f8443091117d298f1dd4bb434794590a --hash=sha256:102fd348e1ac3ebc4fb024f8d1dba104fc0af7d2089fe8e51d2ecea4d7775f8e --hash=sha256:10e8c97afcfbeb99170618052d8e970f7ee4c103cba5a595c53e746a3faa6c5b --hash=sha256:12e5bbe8d724de633f9475e882cdb471515c74ea5a88ee7b299ee9080e72da09 --hash=sha256:17a19e656c90df6d15f0d1379d28c00df90064bed437da2ae4acdf5a7c51e639 --hash=sha256:1a0ea86aa10851f8d169021dd74e049343d8fe3da5826965c4ec4fa39dc11bf7 --hash=sha256:22584717633cd6bb4d456a9b3abdf8fbe3ad0552d210264bf5280530099884c3 --hash=sha256:26ba1d3e9ddd43853fb021999fe83648358fc6d61cd48f8150beb8c3bbc0ed10 --hash=sha256:2e5e44ae0c06a12e3c2dd2c657d2043b26a9f01350ad8e41590531ca1649058a --hash=sha256:33a3a433e719ba7b3956f2f8fcb5986123752158f3ecec00b75884a9785bd45d --hash=sha256:3518c926609c2dea384cb0e032f5fc831c69528b7b5cff813487a9b917e9d0a7 --hash=sha256:35ce58f8e7182f3df07b4fd9e50dde8f3f5d3b60ac663e6a6fce576d4297c8c0 --hash=sha256:3a8859b96159630fee7ce4476523ede983eb1684d797fd5eb68600354096dcdf --hash=sha256:3acecd333a5647b6a2f7298a8a2b3bec5fe442c4a7f72076f8f708379679401f --hash=sha256:3b2646917f6c954359e6505c92cc89efb65e7af53e4b27299ea47ec0be24b013 --hash=sha256:3ccacfc40bde7988307a7e22b51325ef6e7c8181429f105fdb581ef171b74f43 --hash=sha256:3d50cce36acec47eb1a2fa9f61e645c7b0da4f7be39ebf228a13183acdc37160 --hash=sha256:44f5622063c97a7035ba3b26722b4fa060a4c5a08ea634d49fa79762c6888ed1 --hash=sha256:4708794b6c5af66f79d92462d30c030b2147b39ae0408822a077328c1ff38d60 --hash=sha256:4aa2668fa24aa3223bae9d1363aa3274ef2201f2f1560542b6d3c282130a3831 --hash=sha256:4c57de56dfd17c9b5ba39ebe7def200bc5aa5a22848fc8c727e75e1911a2978d --hash=sha256:4e2468ada3e1d36acd5625e7295471d4683be8564013f078b66c672771b93069 --hash=sha256:4ee5529ee8d6e9f159dc5d3c61b303e33d33596b8751fec24ff5f30709a91972 --hash=sha256:528668b377942567682edfb8e957b39a497c34d725504401f75643ca4de70903 --hash=sha256:5504a03269cd493813d18c4657dfce80c39ca9b7ba7f1a4069d06bdd607481a7 --hash=sha256:574a32062357f6c49d854b5ab8b46ddf3a5a173320826c11ed8abde3557af2e6 --hash=sha256:59a5ad65739f8c3a972950011887bdd16877a73a9070edef33b5417338db0cfa --hash=sha256:5db324280aaaf4699715f80a538fcca9413ae0bc805d8702f4db4b1253fb3287 --hash=sha256:634b9dbdc7f789efa4a3273f8fb94ab0480c9cd5e5be0ca2d9a7f0f090c7da3d --hash=sha256:64e4234bffc89ff322d55201b705961f082f6c75730d146ffa025e1dfe6f0c32 --hash=sha256:6b0117a4cda54848b7c635ba0253b494560d689084f6340a16375ede92d9bf92 --hash=sha256:6db9cb2795107446898a72a4b5012d2d7f5a70903a2ec62ff2a30939f25944d9 --hash=sha256:70bb7a6fd866fa097e5f1f7d34b9b1d7913399ab7f94973be4d04dbb74c0ab58 --hash=sha256:73c62c7344ee27fca1c9723fe367264c06898aa84e0ddaf62cb7d5c3b5adab3b --hash=sha256:7989b395bf0804bccea83abe565b86a44e5712078a4a6fdb03b8623892ebf7b3 --hash=sha256:863a624c4a9bdad105bde1f15790a6e7739efcbcfe9c19a961575c14301526aa --hash=sha256:89841ea2b253275f11135a232b671123f46a145536d82bf66cf07087fd93a4d1 --hash=sha256:8c9eeff4487cd7215f2781a826423fa60fa01d9a4dc4fa7e151da789e9d1d443 --hash=sha256:929f926f9ae1b44263392b4bcfee3fa1e4c7643ee460d93c860e2113260722e9 --hash=sha256:9b3a0f2b97cd300747a44a78f134e729afe45ae627e7110e764710235b1828c9 --hash=sha256:9f25448a1af23a013064264b9e2241e0c5d0e1941aeb82dafa969520c694efb9 --hash=sha256:9fb4bc001b084869330fb09c5b3f0229534f4d9b65caf5a032924b2283ed3616 --hash=sha256:a05077feb84f7aeb550f3e6cf97e830024a221fe3a584289232f4647727ac5c6 --hash=sha256:a18f47204f6b2a1d81769e736ddf9fdfb23cff01021c17491f2faf097ced6677 --hash=sha256:a52606059a84495374bbd752c8de2b36d3f018cd715eddac559686b4e6868789 --hash=sha256:a88f7e543a75d3cdeb082a4a2d70358c6926f30c3755f1e7d5053cc37c487322 --hash=sha256:af3e665aeb2ef702bc21c86b8fa00fe7a2ec20a6a30c6406d2cb793a7860678b --hash=sha256:b00767f7e4df37363ca111a5772ba051a1f714477953760e1374c51bcc3fc709 --hash=sha256:b35d60bf6b98200007d818100690d3810a1226e44510fccd8ee5c9d4fe02956c --hash=sha256:b3ea518a701000a312014e0c1689e1f29ab64d161a8ee99327e9ec4c0711bcc3 --hash=sha256:b791dcf0f896cb0e6f2148a2a954f103558c2bc3ad4afcacaed2796ab490ed47 --hash=sha256:b88f610958c6beee5c269091ea850a10d3aa880241ea730985b3fe7f5979197f --hash=sha256:be8b79d39a250ab629cf85b77426f7583bc289c4ae2cf370501bef39d13e6acb --hash=sha256:c1e56c7a933f9970f901432a449be7b62f35c80811b0e32bd54bd2ce4451beee --hash=sha256:c3a41594d7b1a637f6e13d6935ebb93616fe0b01931ce4894c097e79a51f4927 --hash=sha256:c7780d8af6921c18e8e920376b32d7707294e5cd3838f4762cf746ab919bcc40 --hash=sha256:c8c6413b9e2c04dcf5b45e689fd307769270a973863f97e3fffa0220310d22a8 --hash=sha256:cac87825a3bca9f831600846b292613c55cafd4080a87d545671439048ca5e5e --hash=sha256:cd4042ca4b7a92884546fc09c4403d08e6ce33b9ccf6769198a2b78393c8e4ae --hash=sha256:ce14ffe5d138d72605404df0a43e2a40f6f5198bb7dc8cbe81cbb68239a9f4c6 --hash=sha256:d5b5edb0c2b42c9048e0183ade720c59cd89d341ec8e0a01fdc380f9d2e7e760 --hash=sha256:d7da3b8b9f67d05343c195cf3a080ec7b94040dac233fcf0771440456cc6ef5f --hash=sha256:dae9c8972e2dfe1fcaccdc48f7465f0db2e4220f1f7b299b4c0970a5f46c66e2 --hash=sha256:e1fc0084d072639853cee7108211c2efb753266afe0f2cd037e0a8a7b3c29a57 --hash=sha256:e669d3e72e9b341c8c421527b852cc4169dae4a26c23cc32ad15b3a21201adaa --hash=sha256:e8ab0adf047f8e81bb25890ac1e370e891d4d689bc55e905f8a8e0fe8a45bd47 --hash=sha256:ece827ae024c9364a2541e3e9b3dfeddc3ebbfd80fc7b5bebaf2baf9c0c14d11 --hash=sha256:ef72c0805f435acb35a952b95f499574c168a24c9be7368f64560ce0df527b81 --hash=sha256:f4f137e1b3df4b3ee5ad73bc0d9b9940210c7743dc009463c7426acabad60a11 --hash=sha256:f7ec4867d1ecf80039f0aaff1bf085779bbd4c1ff4fa8b98763474d9042dea4d --hash=sha256:fa39b674e9c4b8de4a04a12de7e5119fe378f5a3abb76cfd897bc35288a08366",
+        "sherpa-onnx-core==2.0.1 --hash=sha256:08890e9ea23ed2f59f81d5840c63b6b5cc8674d0f6e48d9069126a848aa0e022 --hash=sha256:28504bb23556ca3a0cef2d8ff95a48d67a7c1e2ce0d9cbc95e2c48f594c9f5e0 --hash=sha256:4a855a5c89c89885111e4e9c570e5da1aed63373c031b757d8046792d95fe8fe --hash=sha256:5cbc726f3026ef1958f7f0141ea2d130e4efa87164a8377eba1df2c2d61d0fcf --hash=sha256:82ab505a835e616f568ba6804555969e1b5699341d2b18eb27f0083b068b61ff --hash=sha256:93f8ac6a05e7622d811a00fabf1f1dd74c1fb7de94c249e123f850f29ae90cbe --hash=sha256:c5bf957898988c99aada24c2e65e9555d696213adaf268ee6e3acab7a91529a1 --hash=sha256:c6ee74dffb4acf81f5fb26e1d45560baa6fd5c34bc192546b50c744005eb9702 --hash=sha256:d76e69f6a0accd2c9f92754058ac5a7b4856dd41746041299bf2f59089296ad4 --hash=sha256:dcd870aa0c14539f063d286fbcbe9ca4ccbfc69d64f3314fb60d0c3f03ae2ff6 --hash=sha256:dedc782962dda482af37ebe1a7109fc5a7133ad109605a85c203c67a846188eb --hash=sha256:f4ee0ab91c4ae596e0e49d7de32522a946295e038a652f1c1884d89014ee4ec2 --hash=sha256:fe43986eff8ccdfbb7fc851ee1b40e6df9869ff14da2de6b70302872e555480d"
+      ],
+      "archive": {
+        "url": "https://github.com/Gobindpreet9/yapper-models/releases/download/engine-packs/speech-onnx-6.tar.gz",
+        "size_bytes": 11994,
+        "sha256": "4f2bc27846dd289cfb5efc08066d2a424c33b824c3630681c363421ca0b8e779"
+      }
+    }
+  ]
+}
