@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "catalog_version": 19,
+  "catalog_version": 20,
   "issued_at": "2026-10-30",
   "models": [
     {
@@ -1504,6 +1504,9 @@
         "part": "det"
       },
       "component": true,
+      "attribution": [
+        "PP-OCRv6 small detection by PaddlePaddle (https://huggingface.co/PaddlePaddle/PP-OCRv6_small_det_onnx), Apache-2.0."
+      ],
       "voices": [],
       "quality": {
         "status": "pass",
@@ -1554,6 +1557,9 @@
         "part": "rec"
       },
       "component": true,
+      "attribution": [
+        "PP-OCRv6 small recognition by PaddlePaddle (https://huggingface.co/PaddlePaddle/PP-OCRv6_small_rec_onnx), Apache-2.0."
+      ],
       "voices": [],
       "quality": {
         "status": "pass",
