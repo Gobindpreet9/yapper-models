@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "catalog_version": 21,
-  "issued_at": "2026-11-04",
+  "catalog_version": 22,
+  "issued_at": "2026-11-07",
   "models": [
     {
       "id": "supertone--supertonic-3",
@@ -1870,6 +1870,130 @@
         ],
         "speed_note": ""
       }
+    },
+    {
+      "display_name": "Pocket TTS (GGUF)",
+      "variant": "pocket-tts-english-q8",
+      "description": "Kyutai Pocket TTS (English) at 8 bits, run by audio.cpp: fast on any processor.",
+      "family": "audiocpp_pocket_tts",
+      "family_version": 1,
+      "repo": "audio-cpp/audio.cpp-gguf",
+      "revision": "fd2fe4c3195bc410f8b817bf7c7519fd822686fb",
+      "runtime_family": "audiocpp/pocket_tts",
+      "weight_format": "gguf",
+      "upstream_status": "supported",
+      "hardware": {
+        "gpu": "none"
+      },
+      "license": {
+        "id": "CC-BY-4.0",
+        "name": "Creative Commons Attribution 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "summary": "Keep the attribution. Kyutai's terms prohibit impersonating a person without consent.",
+        "commercial_use": "conditional"
+      },
+      "languages": [
+        "en"
+      ],
+      "settings": {
+        "model_path": "PocketTTS-GGUF/english",
+        "voice_option": "voice_embedding_file",
+        "voice_value": "file:PocketTTS-GGUF/english/embeddings/{key}.safetensors",
+        "precision": "q8_0"
+      },
+      "voices": [
+        {
+          "key": "alba",
+          "name": "Alba",
+          "gender": "female"
+        },
+        {
+          "key": "marius",
+          "name": "Marius",
+          "gender": "male"
+        },
+        {
+          "key": "javert",
+          "name": "Javert",
+          "gender": "male"
+        },
+        {
+          "key": "fantine",
+          "name": "Fantine",
+          "gender": "female"
+        },
+        {
+          "key": "eponine",
+          "name": "Eponine",
+          "gender": "female"
+        },
+        {
+          "key": "azelma",
+          "name": "Azelma",
+          "gender": "female"
+        }
+      ],
+      "attribution": [
+        "Pocket TTS model weights and voice embeddings by Kyutai (https://huggingface.co/kyutai/pocket-tts), CC BY 4.0.",
+        "Voice alba: recording by Alba MacKenna (kyutai/tts-voices), CC BY 4.0. Voices azelma, eponine and fantine: derived from the CSTR VCTK Corpus (University of Edinburgh), CC BY 4.0. Voices marius and javert: Unmute voice donations, CC0 1.0.",
+        "GGUF conversion by the audio.cpp project (https://huggingface.co/audio-cpp/audio.cpp-gguf), same license as the original weights."
+      ],
+      "notices": [
+        "Kyutai's terms for this model prohibit impersonating or cloning a person's voice without their explicit, lawful consent, deception, and unlawful or harmful content. Full terms: https://huggingface.co/kyutai/pocket-tts"
+      ],
+      "quality": {
+        "status": "pass",
+        "check": "product-check (B07, three-chapter book and podcast): REVIEW for listening items only on the CPU and the GPU at seeds 7, 8 and 9 (with en-spoken-4's 'Esquire.' fix)",
+        "date": "2026-11-06",
+        "report": "docs/research/implementation-plan/r06-report.md"
+      },
+      "id": "audio-cpp--audio.cpp-gguf--pocket-tts-english-q8",
+      "files": [
+        {
+          "path": "PocketTTS-GGUF/english/pocket-tts-english-q8_0.gguf",
+          "size_bytes": 127867968,
+          "sha256": "3f71cf6a51f93c2f2e554e98970a3f49fb9a98d0c64bed5a815e65be3d2ff588"
+        },
+        {
+          "path": "PocketTTS-GGUF/english/embeddings/alba.safetensors",
+          "size_bytes": 6194424,
+          "sha256": "69c32db63ca56843d994f81f343f62e0bf2d73f7e4c9bc73e44bb1110b1d8845"
+        },
+        {
+          "path": "PocketTTS-GGUF/english/embeddings/marius.safetensors",
+          "size_bytes": 6194424,
+          "sha256": "04f84efcb77a0547ba582c058db496f7ff4920891d49d37b9950d128422582a8"
+        },
+        {
+          "path": "PocketTTS-GGUF/english/embeddings/javert.safetensors",
+          "size_bytes": 6194424,
+          "sha256": "0ae88e03ca4e76a0e16cbf321a807428febda9d9e9bc0358c02e7f9c9e2c263b"
+        },
+        {
+          "path": "PocketTTS-GGUF/english/embeddings/fantine.safetensors",
+          "size_bytes": 6538488,
+          "sha256": "51a8a4355d7f912d4959e4b1918314fda85ad47eba0a33a1d78a4a505d3465f5"
+        },
+        {
+          "path": "PocketTTS-GGUF/english/embeddings/eponine.safetensors",
+          "size_bytes": 6931704,
+          "sha256": "bda3b76a384ff355fe0350736387765946304ae8ca16e59f60ea3296a1c99cc6"
+        },
+        {
+          "path": "PocketTTS-GGUF/english/embeddings/azelma.safetensors",
+          "size_bytes": 7963896,
+          "sha256": "9f3e69f29075f991fd47774566865ef0e0e637cb5a35992c9919761b5b84b1de"
+        }
+      ],
+      "resources": {
+        "download_bytes": 167885328,
+        "ram_gb": 1,
+        "backends": [
+          "cpu",
+          "cuda"
+        ],
+        "speed_note": ""
+      }
     }
   ],
   "engine_packs": [
@@ -2169,6 +2293,327 @@
             "requires_model_download": true
           }
         }
+      }
+    },
+    {
+      "schema": 1,
+      "id": "audiocpp",
+      "version": 1,
+      "display_name": "audio.cpp speech engine (processor)",
+      "engine_interface": [
+        1
+      ],
+      "delivery": "download",
+      "platform": "linux-x86_64",
+      "backend": "cpu",
+      "python": "3.11.16",
+      "index": "pypi",
+      "license": "audio.cpp: Apache-2.0 (ShugoAI), with ggml (MIT), sentencepiece (Apache-2.0), cJSON, libyaml and utf8proc (MIT). Yapper's engine program: MIT.",
+      "notices": [
+        "This engine runs as its own program. It contains audio.cpp v0.9.4 (Apache-2.0, https://github.com/0xShug0/audio.cpp), built by Yapper from the source in Yapper's repository (third_party/audio.cpp, with its license and the list of Yapper's changes). Model weights are not part of it: each model is downloaded from its own publisher and keeps its own license."
+      ],
+      "families": {
+        "audiocpp_qwen3_tts": {
+          "version": 1,
+          "display_name": "Qwen3-TTS (audio.cpp)",
+          "capabilities": {
+            "streaming": false,
+            "voice_cloning": false,
+            "voice_design": false,
+            "multi_language": false,
+            "speed_control": true,
+            "emotion_control": false,
+            "low_latency": false,
+            "max_text_length": 600,
+            "text_normalization": "en-spoken-4",
+            "speaking_rate": {
+              "method": "time_scale",
+              "default": {
+                "book": 1.0,
+                "podcast": 1.0
+              },
+              "letters_per_second": 10.5
+            }
+          },
+          "engine": {
+            "name": "Qwen3-TTS",
+            "description": "Qwen3-TTS for controllable 10-language synthesis, 3-second voice cloning, CustomVoice, and VoiceDesign.",
+            "license": "Apache-2.0 (audio.cpp)",
+            "website_url": "https://github.com/0xShug0/audio.cpp",
+            "version": "v0.9.4"
+          }
+        },
+        "audiocpp_pocket_tts": {
+          "version": 1,
+          "display_name": "Pocket TTS (audio.cpp)",
+          "capabilities": {
+            "streaming": false,
+            "voice_cloning": false,
+            "voice_design": false,
+            "multi_language": false,
+            "speed_control": true,
+            "emotion_control": false,
+            "low_latency": true,
+            "max_text_length": 400,
+            "text_normalization": "en-spoken-4",
+            "spoken_hums_as": "Yes",
+            "speaking_rate": {
+              "method": "time_scale",
+              "default": {
+                "book": 0.85,
+                "podcast": 0.9
+              },
+              "letters_per_second": 13.2,
+              "voice_rates": {
+                "alba": 0.9,
+                "marius": 0.81,
+                "javert": 1.02,
+                "fantine": 0.99,
+                "eponine": 1.04,
+                "azelma": 1.06
+              }
+            }
+          },
+          "engine": {
+            "name": "PocketTTS",
+            "description": "Kyutai 100M-parameter CPU-friendly TTS package set for real-time local synthesis and small-footprint voice cloning in English, French, German, Italian, Portuguese, and Spanish.",
+            "license": "Apache-2.0 (audio.cpp)",
+            "website_url": "https://github.com/0xShug0/audio.cpp",
+            "version": "v0.9.4"
+          }
+        },
+        "audiocpp_chatterbox": {
+          "version": 1,
+          "display_name": "Chatterbox (audio.cpp)",
+          "capabilities": {
+            "streaming": false,
+            "voice_cloning": false,
+            "voice_design": false,
+            "multi_language": false,
+            "speed_control": true,
+            "emotion_control": false,
+            "low_latency": false,
+            "max_text_length": 400,
+            "text_normalization": "en-spoken-4",
+            "speaking_rate": {
+              "method": "time_scale",
+              "default": {
+                "book": 0.9,
+                "podcast": 0.95
+              },
+              "letters_per_second": 14.0
+            }
+          },
+          "engine": {
+            "name": "Chatterbox",
+            "description": "Open-source Chatterbox family for expressive TTS and voice conversion, with emotion exaggeration control, fast generation, zero-shot voice cloning, and an integrated multilingual TTS path.",
+            "license": "Apache-2.0 (audio.cpp)",
+            "website_url": "https://github.com/0xShug0/audio.cpp",
+            "version": "v0.9.4"
+          }
+        },
+        "audiocpp_vibevoice": {
+          "version": 1,
+          "display_name": "VibeVoice (audio.cpp)",
+          "capabilities": {
+            "streaming": false,
+            "voice_cloning": false,
+            "voice_design": false,
+            "multi_language": false,
+            "speed_control": true,
+            "emotion_control": false,
+            "low_latency": false,
+            "max_text_length": 600,
+            "text_normalization": "en-spoken-4",
+            "speaking_rate": {
+              "method": "time_scale",
+              "default": {
+                "book": 1.0,
+                "podcast": 1.0
+              },
+              "letters_per_second": 10.5
+            }
+          },
+          "engine": {
+            "name": "VibeVoice",
+            "description": "Microsoft long-form multi-speaker TTS model for expressive conversational audio such as podcasts, supporting up to 90 minutes of speech with as many as four speakers.",
+            "license": "Apache-2.0 (audio.cpp)",
+            "website_url": "https://github.com/0xShug0/audio.cpp",
+            "version": "v0.9.4"
+          }
+        }
+      },
+      "requirements": [],
+      "archive": {
+        "url": "https://github.com/Gobindpreet9/yapper-models/releases/download/engine-packs/audiocpp-1.tar.gz",
+        "size_bytes": 10519566,
+        "sha256": "64ca29fd57a3836cfa32666b7816ee98fdd6e66e26603154b70a939fd7ee6e47"
+      }
+    },
+    {
+      "schema": 1,
+      "id": "audiocpp-cuda",
+      "version": 1,
+      "display_name": "audio.cpp speech engine (NVIDIA graphics card)",
+      "engine_interface": [
+        1
+      ],
+      "delivery": "download",
+      "platform": "linux-x86_64",
+      "backend": "cuda",
+      "python": "3.11.16",
+      "index": "pypi",
+      "license": "audio.cpp: Apache-2.0 (ShugoAI), with ggml (MIT), sentencepiece (Apache-2.0), cJSON, libyaml and utf8proc (MIT). Yapper's engine program: MIT.",
+      "notices": [
+        "This engine runs as its own program. It contains audio.cpp v0.9.4 (Apache-2.0, https://github.com/0xShug0/audio.cpp), built by Yapper from the source in Yapper's repository (third_party/audio.cpp, with its license and the list of Yapper's changes). Model weights are not part of it: each model is downloaded from its own publisher and keeps its own license.",
+        "The NVIDIA CUDA runtime, cuBLAS and cuFFT are downloaded by your computer directly from the Python Package Index, each checked against a pinned checksum, under NVIDIA's license for those libraries. Yapper does not include or redistribute them."
+      ],
+      "families": {
+        "audiocpp_qwen3_tts": {
+          "version": 1,
+          "display_name": "Qwen3-TTS (audio.cpp)",
+          "capabilities": {
+            "streaming": false,
+            "voice_cloning": false,
+            "voice_design": false,
+            "multi_language": false,
+            "speed_control": true,
+            "emotion_control": false,
+            "low_latency": false,
+            "max_text_length": 600,
+            "text_normalization": "en-spoken-4",
+            "speaking_rate": {
+              "method": "time_scale",
+              "default": {
+                "book": 1.0,
+                "podcast": 1.0
+              },
+              "letters_per_second": 10.5
+            }
+          },
+          "engine": {
+            "name": "Qwen3-TTS",
+            "description": "Qwen3-TTS for controllable 10-language synthesis, 3-second voice cloning, CustomVoice, and VoiceDesign.",
+            "license": "Apache-2.0 (audio.cpp)",
+            "website_url": "https://github.com/0xShug0/audio.cpp",
+            "version": "v0.9.4"
+          }
+        },
+        "audiocpp_pocket_tts": {
+          "version": 1,
+          "display_name": "Pocket TTS (audio.cpp)",
+          "capabilities": {
+            "streaming": false,
+            "voice_cloning": false,
+            "voice_design": false,
+            "multi_language": false,
+            "speed_control": true,
+            "emotion_control": false,
+            "low_latency": true,
+            "max_text_length": 400,
+            "text_normalization": "en-spoken-4",
+            "spoken_hums_as": "Yes",
+            "speaking_rate": {
+              "method": "time_scale",
+              "default": {
+                "book": 0.85,
+                "podcast": 0.9
+              },
+              "letters_per_second": 13.2,
+              "voice_rates": {
+                "alba": 0.9,
+                "marius": 0.81,
+                "javert": 1.02,
+                "fantine": 0.99,
+                "eponine": 1.04,
+                "azelma": 1.06
+              }
+            }
+          },
+          "engine": {
+            "name": "PocketTTS",
+            "description": "Kyutai 100M-parameter CPU-friendly TTS package set for real-time local synthesis and small-footprint voice cloning in English, French, German, Italian, Portuguese, and Spanish.",
+            "license": "Apache-2.0 (audio.cpp)",
+            "website_url": "https://github.com/0xShug0/audio.cpp",
+            "version": "v0.9.4"
+          }
+        },
+        "audiocpp_chatterbox": {
+          "version": 1,
+          "display_name": "Chatterbox (audio.cpp)",
+          "capabilities": {
+            "streaming": false,
+            "voice_cloning": false,
+            "voice_design": false,
+            "multi_language": false,
+            "speed_control": true,
+            "emotion_control": false,
+            "low_latency": false,
+            "max_text_length": 400,
+            "text_normalization": "en-spoken-4",
+            "speaking_rate": {
+              "method": "time_scale",
+              "default": {
+                "book": 0.9,
+                "podcast": 0.95
+              },
+              "letters_per_second": 14.0
+            }
+          },
+          "engine": {
+            "name": "Chatterbox",
+            "description": "Open-source Chatterbox family for expressive TTS and voice conversion, with emotion exaggeration control, fast generation, zero-shot voice cloning, and an integrated multilingual TTS path.",
+            "license": "Apache-2.0 (audio.cpp)",
+            "website_url": "https://github.com/0xShug0/audio.cpp",
+            "version": "v0.9.4"
+          }
+        },
+        "audiocpp_vibevoice": {
+          "version": 1,
+          "display_name": "VibeVoice (audio.cpp)",
+          "capabilities": {
+            "streaming": false,
+            "voice_cloning": false,
+            "voice_design": false,
+            "multi_language": false,
+            "speed_control": true,
+            "emotion_control": false,
+            "low_latency": false,
+            "max_text_length": 600,
+            "text_normalization": "en-spoken-4",
+            "speaking_rate": {
+              "method": "time_scale",
+              "default": {
+                "book": 1.0,
+                "podcast": 1.0
+              },
+              "letters_per_second": 10.5
+            }
+          },
+          "engine": {
+            "name": "VibeVoice",
+            "description": "Microsoft long-form multi-speaker TTS model for expressive conversational audio such as podcasts, supporting up to 90 minutes of speech with as many as four speakers.",
+            "license": "Apache-2.0 (audio.cpp)",
+            "website_url": "https://github.com/0xShug0/audio.cpp",
+            "version": "v0.9.4"
+          }
+        }
+      },
+      "gpu": {
+        "min_compute": "7.5",
+        "min_cuda": "13.0"
+      },
+      "requirements": [
+        "nvidia-cublas==13.10.0.20 --hash=sha256:05929d6a64af9edce1951ff82a514d630fc1a2369bcfe1ab195f5e85266dbfed --hash=sha256:c310b749eea855b88fafb906de08d6819b87216c6711640771764fea5dcd8546 --hash=sha256:c5f3418c0a845232a8cabc58f6fa52cfae7d8bd3680d94c3907aca710fd48d70 --hash=sha256:dcc6d63884c53d07e267ce7e6feac17b2538cebaafec5db865736c3e28e4dc84",
+        "nvidia-cuda-nvrtc==13.5.37 --hash=sha256:36e4fa2a8ada293f5693d308e531c196ab6f91cf7a0ff479bf96a537d43a6096 --hash=sha256:86b4d68058807988b7d9af5b44917a0601e9c337f35ccd657bfb3c759ff8d8bc --hash=sha256:d47388d9054a9f16c705d86e59d7e6c57e85beece36d23d1657833531fa913aa --hash=sha256:e8e6c10b251385707ae3abd7b4ee118de6736fd7678d0f0f4eab4d759f679c21",
+        "nvidia-cuda-runtime==13.4.92 --hash=sha256:08dca5e4aba480c2fd5b55075c0fa71b84ef9dcf0521f2d58baa14a803a7311c --hash=sha256:43972819798ca06ad6354f6cbdb82a0a113f88b94e9ea90256d660027b0b3b60 --hash=sha256:9641f797da20ce1dd8e779b6e96d08cf9ba564cec8e8225458811ee26423f3a5 --hash=sha256:bef071788589550ab02846fcbc732a2b88c2b16f2cd8a0f45d98e68e8c5fb0c8",
+        "nvidia-cufft==12.5.0.14 --hash=sha256:091cde103312d6e09366122fe3f67092dcfd94cc9785029d695d6bcffaa76fdf --hash=sha256:77eaacecf83758e8e20458a199d56359d46596e3a2814af741f27d1f483381e9 --hash=sha256:78e7585159ecf37d73af1ce43a5dea7fd3360e1af71cde08f070c07966a336bc --hash=sha256:b8be26837a5abad2b5b74f3e92dd29f622a42934b355be0961a48712cbba23ad",
+        "nvidia-nvjitlink==13.5.37 --hash=sha256:280d7cb9649704145f074b8dbde500de04ce02d0872e066e20a83c17bcaa93eb --hash=sha256:4465d4e8f2212118220b580c82523c5654f93a62906bd51d29d79bdfc12376c1 --hash=sha256:893f6f9a55b2720ed94913b5ba3332e972da8c78dfa2863d0244403dbd528ffc --hash=sha256:eb30348ae64c525180a280025dd12a089c3e2e1dc4e19cdd58f68c6edc622404"
+      ],
+      "archive": {
+        "url": "https://github.com/Gobindpreet9/yapper-models/releases/download/engine-packs/audiocpp-cuda-1.tar.gz",
+        "size_bytes": 111289463,
+        "sha256": "7f20c9b44aa8f36aa12c07a37db5ebd0ab81bd10e9e178142f892ded8c8f5f45"
       }
     },
     {
