@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "catalog_version": 22,
+  "catalog_version": 23,
   "issued_at": "2026-11-07",
   "models": [
     {
@@ -1872,7 +1872,7 @@
       }
     },
     {
-      "display_name": "Pocket TTS (GGUF)",
+      "display_name": "Pocket TTS GGUF",
       "variant": "pocket-tts-english-q8",
       "description": "Kyutai Pocket TTS (English) at 8 bits, run by audio.cpp: fast on any processor.",
       "family": "audiocpp_pocket_tts",
@@ -1905,32 +1905,38 @@
         {
           "key": "alba",
           "name": "Alba",
-          "gender": "female"
+          "gender": "female",
+          "description": "Warm and gentle female voice with a soothing quality."
         },
         {
           "key": "marius",
           "name": "Marius",
-          "gender": "male"
+          "gender": "male",
+          "description": "Deep and resonant male voice with commanding presence."
         },
         {
           "key": "javert",
           "name": "Javert",
-          "gender": "male"
+          "gender": "male",
+          "description": "Gruff and edgy male voice with a distinctive character."
         },
         {
           "key": "fantine",
           "name": "Fantine",
-          "gender": "female"
+          "gender": "female",
+          "description": "Melancholic and emotional female voice with expressive depth."
         },
         {
           "key": "eponine",
           "name": "Eponine",
-          "gender": "female"
+          "gender": "female",
+          "description": "Bright and lively female voice with a spirited character."
         },
         {
           "key": "azelma",
           "name": "Azelma",
-          "gender": "female"
+          "gender": "female",
+          "description": "Soft and delicate female voice with gentle warmth."
         }
       ],
       "attribution": [
@@ -2453,7 +2459,7 @@
     {
       "schema": 1,
       "id": "audiocpp-cuda",
-      "version": 1,
+      "version": 2,
       "display_name": "audio.cpp speech engine (NVIDIA graphics card)",
       "engine_interface": [
         1
@@ -2603,6 +2609,7 @@
         "min_compute": "7.5",
         "min_cuda": "13.0"
       },
+      "install_bytes": 1280000000,
       "requirements": [
         "nvidia-cublas==13.10.0.20 --hash=sha256:05929d6a64af9edce1951ff82a514d630fc1a2369bcfe1ab195f5e85266dbfed --hash=sha256:c310b749eea855b88fafb906de08d6819b87216c6711640771764fea5dcd8546 --hash=sha256:c5f3418c0a845232a8cabc58f6fa52cfae7d8bd3680d94c3907aca710fd48d70 --hash=sha256:dcc6d63884c53d07e267ce7e6feac17b2538cebaafec5db865736c3e28e4dc84",
         "nvidia-cuda-nvrtc==13.5.37 --hash=sha256:36e4fa2a8ada293f5693d308e531c196ab6f91cf7a0ff479bf96a537d43a6096 --hash=sha256:86b4d68058807988b7d9af5b44917a0601e9c337f35ccd657bfb3c759ff8d8bc --hash=sha256:d47388d9054a9f16c705d86e59d7e6c57e85beece36d23d1657833531fa913aa --hash=sha256:e8e6c10b251385707ae3abd7b4ee118de6736fd7678d0f0f4eab4d759f679c21",
@@ -2611,9 +2618,9 @@
         "nvidia-nvjitlink==13.5.37 --hash=sha256:280d7cb9649704145f074b8dbde500de04ce02d0872e066e20a83c17bcaa93eb --hash=sha256:4465d4e8f2212118220b580c82523c5654f93a62906bd51d29d79bdfc12376c1 --hash=sha256:893f6f9a55b2720ed94913b5ba3332e972da8c78dfa2863d0244403dbd528ffc --hash=sha256:eb30348ae64c525180a280025dd12a089c3e2e1dc4e19cdd58f68c6edc622404"
       ],
       "archive": {
-        "url": "https://github.com/Gobindpreet9/yapper-models/releases/download/engine-packs/audiocpp-cuda-1.tar.gz",
-        "size_bytes": 111289463,
-        "sha256": "7f20c9b44aa8f36aa12c07a37db5ebd0ab81bd10e9e178142f892ded8c8f5f45"
+        "url": "https://github.com/Gobindpreet9/yapper-models/releases/download/engine-packs/audiocpp-cuda-2.tar.gz",
+        "size_bytes": 111289479,
+        "sha256": "932ba43535f087d10ef619f3fc39e0f55367c2349e698462eb156fbcc8855708"
       }
     },
     {
