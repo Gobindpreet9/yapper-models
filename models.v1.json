@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "catalog_version": 23,
-  "issued_at": "2026-11-07",
+  "catalog_version": 24,
+  "issued_at": "2026-11-11",
   "models": [
     {
       "id": "supertone--supertonic-3",
       "display_name": "Supertonic 3",
-      "description": "Supertone's fast on-device voice model: ten built-in voices (five female, five male), English in Yapper, about five times faster than real time on a CPU.",
+      "description": "Fast, with ten voices. English.",
       "family": "supertonic_onnx",
       "family_version": 1,
       "repo": "Supertone/supertonic-3",
@@ -189,7 +189,7 @@
     },
     {
       "display_name": "Qwen3-TTS 0.6B",
-      "description": "Compact multilingual model. Follows style directions on the graphics card or, slowly, on the processor.",
+      "description": "Smaller Qwen3-TTS. Follows style directions; slow without a graphics card.",
       "family": "qwen",
       "family_version": 1,
       "repo": "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
@@ -613,7 +613,7 @@
     },
     {
       "display_name": "Qwen3-TTS 1.7B",
-      "description": "Large multilingual model: the most expressive we tested. Needs a graphics card.",
+      "description": "Expressive and multilingual. Follows style directions. Needs a graphics card.",
       "family": "qwen",
       "family_version": 1,
       "repo": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
@@ -1252,7 +1252,7 @@
     },
     {
       "display_name": "Pocket TTS",
-      "description": "Kyutai Pocket TTS (English, without voice cloning) with six built-in voices.",
+      "description": "Light and clear. Six voices. English.",
       "family": "pocket",
       "family_version": 1,
       "repo": "kyutai/pocket-tts-without-voice-cloning",
@@ -1591,7 +1591,7 @@
     },
     {
       "display_name": "Kokoro",
-      "description": "Kokoro 82M (v1.0, 8-bit), the most downloaded open speech model on Hugging Face. Warm, clear voices; about 1.4x real time on CPU.",
+      "description": "Warm, clear voices.",
       "family": "sherpa_onnx_tts",
       "family_version": 1,
       "repo": "csukuangfj/kokoro-int8-multi-lang-v1_0",
@@ -1702,7 +1702,7 @@
     },
     {
       "display_name": "Kitten Mini",
-      "description": "KittenML Kitten TTS Mini 0.1: very small, faster than real time on any CPU.",
+      "description": "Very small and quick.",
       "family": "sherpa_onnx_tts",
       "family_version": 1,
       "repo": "csukuangfj/kitten-mini-en-v0_1-fp16",
@@ -1808,7 +1808,7 @@
     },
     {
       "display_name": "Piper Alba (British)",
-      "description": "Piper VITS voice from the Open Home Foundation: a clear Scottish English voice, several times faster than real time on CPU.",
+      "description": "A clear Scottish English voice.",
       "family": "sherpa_onnx_tts",
       "family_version": 1,
       "repo": "csukuangfj/vits-piper-en_GB-alba-medium",
@@ -1872,9 +1872,9 @@
       }
     },
     {
-      "display_name": "Pocket TTS GGUF",
+      "display_name": "Pocket TTS Fast",
       "variant": "pocket-tts-english-q8",
-      "description": "Kyutai Pocket TTS (English) at 8 bits, run by audio.cpp: fast on any processor.",
+      "description": "Pocket TTS, faster. Six voices. English.",
       "family": "audiocpp_pocket_tts",
       "family_version": 1,
       "repo": "audio-cpp/audio.cpp-gguf",
